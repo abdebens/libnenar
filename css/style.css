@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "heading";
+  src: url(./38623E_0_0.woff2); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  color: #084d90;
+  line-height: 1.8;
+  font-family: "Nunito Sans", sans-serif; }
+
+.btn {
+  outline: none;
+  background-color: #084d90;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem; }
+  .btn__link {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    text-transform: capitalize; }
+
+.navbar {
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem; }
+  .navbar__logo {
+    width: 20rem;
+    height: 6rem; }
+  .navbar__list {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 5rem; }
+  .navbar__items {
+    flex: 1 0 auto;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+  .navbar__items:hover > .navbar__sublist {
+    top: 2rem;
+    left: 0rem;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible; }
+  .navbar__link, .navbar__sublink {
+    color: #084d90;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    position: relative; }
+  .navbar__sublink {
+    font-size: 1.2rem; }
+  .navbar__sublist {
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    z-index: -999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in; }

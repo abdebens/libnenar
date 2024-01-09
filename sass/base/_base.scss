@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "heading";
+  src: url(./38623E_0_0.woff2);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 16/10 ===> 10px for fontsize
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  color: $text-color;
+  line-height: 1.8;
+  font-family: $text-font;
+}

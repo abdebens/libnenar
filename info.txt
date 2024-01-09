@@ -1,0 +1,85 @@
+// font type
+heding: blendscript
+main-font : nunito 800
+text-font:nunito sans - 700
+nunito sans - 400 for regular font
+
+// colors
+main-color : pink #F5B8BC
+text-color: #084D90
+secondary-color: #CBD5EE
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Nunito:wght@800&display=swap" rel="stylesheet">
+
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+
+heading :
+Al fianco dei genitori,
+sin dal suo primo respiro
+
+///////////////////
+h2
+Mantieni il nasino in salute con Libenar
+//////
+
+Respirare bene è uno degli atti più semplici, ma anche più importanti per un bambino
+
+
+h3 ==== Respiro libero
+p 
+Il benessere nasale influenza le principali attività del tuo bambino come mangiare, dormire e... giocare
+h3 ==== Nasini puliti
+p
+La detersione del nasino evita lo stagnamento del muco che può causare proliferazione batterica, infezioni e naso chiuso.
+h3 ==== Perché Libenar
+p
+I nostri prodotti nascono dalla lunga esperienza di Libenar nel trattamento e nella prevenzione del naso chiuso di neonati e bambini!
+
+
+h2
+Consigli per genitori e bimbi felici
+p
+Ehi mamma e papà, abbiamo raccolto per voi consigli, guide e approfondimenti per la cura del nasino e il benessere dei più piccoli. Scorri gli articoli e cerca quello più adatto alle tue esigenze. Affrontare i piccoli fastidi quotidiani sarà facile con Libenar al tuo fianco!
+h2
+Libenar Flaconcini
+h2
+Libenar Aerosol 3%
+p
+Soluzione salina ipertonica sterile al 3% è indicato per facilitare l’eliminazione di muco e secrezioni e prevenire la secchezza della mucosa bronchiale.
+Disponibile in confezioni da 18 flaconcini da 4 ml
+
+h2
+Libenar Spray Nasale
+
+p
+Spray nasale con acqua di mare: isotonica per la detersione quotidiana e ipertonica per alleviare la congestione nasale.
+Disponibili in bombole da 100ml
+
+h2
+
+Libenar Aspiratore Nasale Soft
+
+p
+Un rimedio per rimuovere il muco in eccesso dei neonati, liberare il naso chiuso e prevenire eventuali complicazioni come le infezioni alle orecchie.
+Disponibile con morbido beccuccio + 5 filtri monouso
+
+h2
+Libenar ti premia
+p
+Acquista almeno 15€ di prodotti, in regalo un buono da 20€ da spendere online per l'acquisto di tanti articoli delle migliori marche
+
+h3
+
+Hai bisogno di un consiglio?
+Cerca tra le nostre risposte!
+
+p
+Libenar mette a disposizione un aiuto a tutti i genitori. Consulta le domande più frequenti e scopri come aiutare il tuo bimbo a respirare meglio
+
+h2
+sogni Liberi per tutti

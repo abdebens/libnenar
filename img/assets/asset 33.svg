@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735 2099.5" style="transform: translate(40%, -20%) matrix(1, 0, 0, 1, 0, 0);">
+            <linearGradient id="hero-right-gradient" gradientUnits="userSpaceOnUse" x1="937.835" y1="-1339.6763" x2="795.1705" y2="-262.4255" gradientTransform="matrix(-0.9848 0.1736 0.1736 0.9848 2524.0889 1191.1726)">
+              <!--<stop offset="0" stop-color="#CBD5EE"/>-->
+              <stop offset="0" stop-color="#FCD7A2"/>
+              <stop offset="0.2" stop-color="#F5B8BC"/>
+            </linearGradient>
+            <path d="M735,0c0,0-329.8,342.1-321.4,489.8c8.4,147.7-181.5,363-261.1,547.8C73,1222.5,0,1342.5,80.2,1515.5 c80.2,173.1,654.8,584,654.8,584V0z" fill="url(#hero-right-gradient)"/>
+          </svg>

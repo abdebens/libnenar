@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                <g transform="translate(.004 -.002)">
+                    
+                    <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                        
+                        <stop offset="0" stop-color="#e3e8f6"/>
+                        <stop offset=".5" stop-color="#cbd5ee"/>
+                        <stop offset="1" stop-color="#7c8ebe"/>
+                    </linearGradient>
+                    <path id="article-bubble-1" d="M338.6 980.3s681.6 202.2 830.6-254.3-230.6-430.9-350-599.2S502-77.7 297.4 239.5-20.7 572.6 3.1 769.8s335.5 210.5 335.5 210.5z" fill="url(#aba)"/>
+                </g>
+                <g transform="translate(.004 -.002)">
+                    
+                    <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+                        
+                        <stop offset="0" stop-color="#e3e8f6"/>
+                        <stop offset=".5" stop-color="#cbd5ee"/>
+                        <stop offset="1" stop-color="#7c8ebe"/>
+                    </linearGradient>
+                    <path id="article-bubble-2" d="M881.5 182.6S270-82.7 79.8 325.3s165.9 427.1 258 597.2 272 226.2 498.2-45.8 333.8-274 333.8-460.3c.2-186.3-288.3-233.8-288.3-233.8z" fill="url(#bab)"/>
+                </g>
+            </svg>

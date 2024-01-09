@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1959.17 1391.59" style="transform: translate(-11%, -20%) matrix(1, 0, 0, 1, 0, 0);">
+            <linearGradient id="hero-gradient-left" y2="1">
+              <stop offset="0" stop-color="#dbcbdc"/>
+              <stop offset="0.4" stop-color="#eac0c9"/>
+            </linearGradient>
+            <path d="M0,1391.59C1.7,1003.8,0,529.6.15,0,.15,0,104,395.7,328.27,520.3s132,232,186,315.09,258.44-140.65,860.68,162.55,584.19,167.12,584.19,167.12v226.53" fill="url(#hero-gradient-left)"/>
+          </svg>

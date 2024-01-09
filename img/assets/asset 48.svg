@@ -1,0 +1,8 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2041.93 1004.09">
+            <linearGradient id="bottom-gradient" x2="0" y2="0.8">
+              <stop offset="0" stop-color="#c8c0d8"/>
+              <stop offset="1" stop-color="#526bb0"/>
+            </linearGradient>
+            <path class="js-sheeps-path" d="M2041.93,0q-7.42,418.56-113.39,576.67c-227.9,340-216,477.64-685.31,411.19S578.7,576.67,292.11,576.67,30.45,531,9.68,447.92Q2,417.17,0,8.89" fill="url(#bottom-gradient)"/>
+            <path id="sheeps-morph" d="M2041.93,0c7.41,64.44,51.16,495.09-203.23,731.45C1760.79,803.84,1655,858,1638.53,866.26c-103.5,52.27-244.25,123.35-388.08,98-198.8-35-192.08-216.89-388.09-259.41C699.05,669.47,661.6,788.64,447.72,772.3,296.13,760.72,106.5,680.54,36,529.67,13.19,481,8.79,422.83,0,306.6A1966.67,1966.67,0,0,1,0,8.89" style="display:none;"/>
+          </svg>
