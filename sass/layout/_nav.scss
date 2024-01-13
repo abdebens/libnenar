@@ -1,9 +1,9 @@
 .navbar {
-  height: 20rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: auto;
+  @include Elcenter(row, space-between, center);
   padding: 4rem;
+  position: sticky;
+  z-index: 9999;
   &__logo {
     width: 20rem;
     height: 6rem;
@@ -12,7 +12,7 @@
   &__list {
     list-style: none;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     gap: 5rem;
   }
@@ -31,6 +31,7 @@
     z-index: 999;
     opacity: 1;
     visibility: visible;
+    width: max-content;
   }
 
   &__link,
@@ -48,15 +49,16 @@
 
   &__sublist {
     position: absolute;
-    top: -5rem;
+    top: -3rem;
     left: 0;
     z-index: -999;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -ms-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
+    list-style: disc;
+    transition: all .2s ;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
   }
 }

@@ -1,18 +1,20 @@
 .btn {
   outline: none;
   background-color: $text-color;
-  border-radius: 5rem;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -ms-border-radius: 5rem;
-  -o-border-radius: 5rem;
+  font-size: 1.4rem;
+  border: none;
+
   &__link {
     color: #fff;
-    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
     text-decoration: none;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.6rem;
     font-weight: 800;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 }

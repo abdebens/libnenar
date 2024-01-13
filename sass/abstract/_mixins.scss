@@ -1,0 +1,6 @@
+@mixin Elcenter($dire, $positionX, $positionY) {
+  display: flex;
+  flex-direction: $dire;
+  justify-content: $positionX;
+  align-items: $positionY;
+}

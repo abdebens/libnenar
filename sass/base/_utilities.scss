@@ -1,0 +1,29 @@
+.margin{
+
+    
+    &__small{
+        margin: 2rem;
+    }
+    &__medium{
+        margin: 5;
+    }
+    &__large{
+    margin: 10rem;
+    }
+
+}
+
+.padding{
+
+    
+    &__small{
+        padding: 2rem;
+    }
+    &__medium{
+        padding: 5;
+    }
+    &__large{
+    padding: 10rem;
+    }
+
+}

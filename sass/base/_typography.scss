@@ -1,0 +1,22 @@
+.heading{
+
+    &__1{
+        font-family: 'heading';
+        font-weight: 100;
+        font-size: 10.5rem;
+        line-height: 10rem;
+        color: #fff;
+    }
+    &__2{
+        font-size: 5.5rem;
+        font-family: $sub-heading-font;
+        @include Elcenter(row, center ,center);
+        @extend .padding__small;
+
+    }
+}
+.paragraph{
+    text-align: center;
+    font-size: 2rem;
+    
+}

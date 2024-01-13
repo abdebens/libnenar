@@ -1,0 +1,80 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(#00000005, #00000059),
+    url(../img/assets/asset19.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  h1 {
+    @include Elcenter(column, center, center);
+    height: 50%;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__girl {
+    background-image: url(../img/assets/asset20.png);
+    width: 90%;
+    height: 88%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-position: right top;
+    z-index: 1;
+  }
+  .header__shape {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .header__shape--left {
+    width: 149%;
+    height: 50%;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+  }
+  .header__shape--right {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    z-index: 99;
+    right: 0;
+  }
+}
+
+.down {
+  @include Elcenter(row, center, center);
+  flex-direction: row;
+  position: relative;
+  z-index: 20;
+  height: 40%;
+  bottom: 0;
+  animation: downAnimate 0.8s cubic-bezier(0.53, 0.26, 0.61, -0.18) infinite;
+  transition: animation linear;
+
+  svg {
+    width: 7rem;
+    height: 13rem;
+  }
+}
+
+// ------------------------- css animation for down arrow--------------
+@keyframes downAnimate {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 1rem;
+  }
+
+  100% {
+    bottom: 2rem;
+  }
+}
