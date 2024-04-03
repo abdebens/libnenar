@@ -1,22 +1,93 @@
-.heading{
+.heading {
+  font-family: $sub-heading-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-weight: bold;
+  &__1 {
+    font-family: "heading";
+    font-weight: 100;
+    font-size: 10.5rem;
+    line-height: 10rem;
+    color: #fff;
 
-    &__1{
-        font-family: 'heading';
-        font-weight: 100;
-        font-size: 10.5rem;
-        line-height: 10rem;
-        color: #fff;
+    @include respond(big) {
+      font-size: 7.5rem;
     }
-    &__2{
-        font-size: 5.5rem;
-        font-family: $sub-heading-font;
-        @include Elcenter(row, center ,center);
-        @extend .padding__small;
+    @include respond(tab-port) {
+      font-size: 6rem;
+      line-height: 1;
+    }
+    @include respond(phone) {
+      font-size: 4rem;
+      line-height: 1;
+    }
+  }
 
+  &__big {
+    font-size: 8.5rem;
+    line-height: 8rem;
+    @include respond(big) {
+      font-size: 4.5rem;
     }
-}
-.paragraph{
+    @include respond(phone) {
+      
+      width: auto;
+    font-size: 3.5rem;
+    }
+   
+  }
+  &__2 {
+    font-size: 5.5rem;
+    @extend .padding__small;
+    line-height: 1.2;
+    padding: 2rem;
+    width: 60rem;
     text-align: center;
-    font-size: 2rem;
+    margin-bottom: 2rem;
+    @include respond(big) {
+      font-size: 4rem;
+      width: 50rem;
+    }
+    @include respond(phone) {
+      
+      width: auto;
+    font-size: 3rem;
+    }
+  }
+  &__3 {
+    font-size: 3.2rem;
+
     
+  }
+}
+.paragraph {
+  font-size: 2rem;
+
+  @include respond(phone) {
+    
+    text-align: center;
+    
+  }
+
+  &__c {
+    text-align: center;
+    width: 60rem;
+    margin: auto;
+    font-size: 2.4rem;
+    @include respond(phone) {
+      width: 100%;
+      padding: 1rem 2rem;
+    }
+  }
+  &__sm {
+    font-size: 1.5rem;
+
+    @include respond(phone) {
+    font-size: 2rem;
+  }
+  }
+
+  span {
+    font-weight: 700;
+  }
 }

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="739" height="609" viewBox="0 0 739 609">
+                      <defs>
+                        <linearGradient id="path-2-c" x1="96.5%" x2="6.4%" y1="-8.1%" y2="93.5%">
+                          <stop offset="0%" stop-color="#E8C2CD"/>
+                          <stop offset="100%" stop-color="#DCC9D9"/>
+                        </linearGradient>
+                        <path class="js-shape" id="path-2-b" d="M451.5514441127179 523.417767143979 C 377.94932777626866 550.4908030293482 225.14426609739945 514.8123559190616 178.1198301386842 456.0206966422322 131.09539417996893 397.22903736540286 127.73970865255626 230.66628008368318 169.40482836042634 170.6678114830028 211.0699480682964 110.66934288232241 353.0559317530791 75.54410673031434 428.1105483859046 96.02988503814998 503.16516501873014 116.51566334598563 615.8257122029106 222.35116764571183 619.7325281573795 293.58248133001666 623.6393441118485 364.8137950143215 525.1535604491671 496.34473125860967 451.5514441127179 523.417767143979z" data-params="{ &quot;centerX&quot;: 370, &quot;centerY&quot;: 304, &quot;minRadius&quot;: 200, &quot;maxRadius&quot;: 250 }" data-svg-origin="408.6829071044922 409.57200622558594" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px;"/>
+                        <filter id="path-2-a" width="118.9%" height="118.9%" x="-9.4%" y="-8.8%" filterUnits="objectBoundingBox">
+                          <feMorphology in="SourceAlpha" operator="dilate" radius="10" result="shadowSpreadOuter1"/>
+                          <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+                          <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/>
+                          <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.321568627   0 0 0 0 0.419607843   0 0 0 0 0.690196078  0 0 0 0.18 0"/>
+                        </filter>
+                      </defs>
+                      <g fill="none" fill-rule="evenodd">
+                        <use fill="#000" filter="url(#path-2-a)" xlink:href="#path-2-b"/>
+                        <use fill="url(#path-2-c)" xlink:href="#path-2-b"/>
+                      </g>
+                    </svg>

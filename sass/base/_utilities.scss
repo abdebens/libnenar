@@ -1,29 +1,42 @@
-.margin{
-
-    
-    &__small{
-        margin: 2rem;
-    }
-    &__medium{
-        margin: 5;
-    }
-    &__large{
+.margin {
+  &__small {
+    margin: 2rem;
+  }
+  &__medium {
+    margin: 5;
+  }
+  &__large {
     margin: 10rem;
-    }
-
+  }
 }
 
-.padding{
-
-    
-    &__small{
-        padding: 2rem;
-    }
-    &__medium{
-        padding: 5;
-    }
-    &__large{
+.padding {
+  &__small {
+    padding: 2rem;
+  }
+  &__medium {
+    padding: 5;
+  }
+  &__large {
     padding: 10rem;
-    }
+  }
+}
 
+%line::after {
+  content: "";
+  width: 25%;
+  height: 0.5rem;
+  background-color: $text-color;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+%line::before {
+  content: "";
+  width: 50%;
+  height: 0.5rem;
+  background-color: $text-color;
+  position: absolute;
+  top: 50%;
+  left: -50%;
 }

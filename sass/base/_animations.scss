@@ -1,0 +1,159 @@
+// ------------------------- css animation for down arrow--------------
+@keyframes downAnimate {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 1rem;
+  }
+
+  100% {
+    bottom: 2rem;
+  }
+}
+
+// @keyframes rotate2 {
+//   from {
+//     transform: rotate(0) scale(0.9);
+//     -webkit-transform: rotate(0) scale(0.9);
+//     -moz-transform: rotate(0) scale(0.9);
+//     -ms-transform: rotate(0) scale(0.9);
+//     -o-transform: rotate(0) scale(0.9);
+//   }
+
+//   to {
+//     transform: rotate(360deg) scale(1);
+//     -webkit-transform: rotate(360deg) scale(1);
+//     -moz-transform: rotate(360deg) scale(1);
+//     -ms-transform: rotate(360deg) scale(1);
+//     -o-transform: rotate(360deg) scale(1);
+//   }
+// }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    -o-transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    -webkit-transform: rotate(180deg) scale(1.1);
+    -moz-transform: rotate(180deg) scale(1.1);
+    -ms-transform: rotate(180deg) scale(1.1);
+    -o-transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
+    -moz-transform: rotate(360deg) scale(1);
+    -ms-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+}
+
+@keyframes twinkleAnimation {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+.star {
+  position: absolute;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: rgba(237, 205, 163, 0.8);
+  box-shadow: 0 0 40px 0 rgba(237, 205, 163, 0.8), 0 0 20px 0 #ffffff;
+  animation: twinkleAnimation 6s infinite alternate;
+  -webkit-animation: twinkleAnimation 6s infinite alternate;
+}
+
+@keyframes nayzak {
+  0% {
+    transform: rotate(-45deg) translateX(0);
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: rotate(-45deg) translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes preload {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+}
+
+@keyframes swing {
+  from {
+    transform: rotate(-3deg);
+  
+}
+  to {
+    transform: rotate(3deg);
+    
+}
+}
+
+@keyframes moveY {
+  from {
+    transform:  translateY(-50%);
+   
+}
+  to {
+    transform:  translateY(0);
+    
+}
+}

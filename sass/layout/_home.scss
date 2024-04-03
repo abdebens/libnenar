@@ -1,37 +1,1031 @@
-.hero-text {
-  width: 100%;
-  height: 85%;
-  background-image: url(../img/assets/asset20.png);
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: top 30%;
+.preload {
   position: absolute;
+  top: 0;
   bottom: 0;
-  h1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, $text-color, $main-color);
+  z-index: 10000;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.circle {
+  width: 25rem;
+  height: 25rem;
+  background-color: #edcda3;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0.5rem solid $main-color;
+  border-block-start-color: $text-color;
+  animation: preload 1 infinite;
+  -webkit-animation: preload 1s infinite;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.preload.loaded {
+  opacity: 0;
+  transition-delay: 250ms;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+
+.hero-heading {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  transform: translateY(-15rem);
+  -webkit-transform: translateY(-15rem);
+  -moz-transform: translateY(-15rem);
+  -ms-transform: translateY(-15rem);
+  -o-transform: translateY(-15rem);
+  z-index: 10;
+  position: relative;
+
+  @include respond(big) {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
     height: 100%;
   }
 }
-
 .one {
   background-color: $main-color;
+  padding: $lg;
+  color: $text-color-2;
 
-  h2 {
-    width: 60rem;
-    margin: auto;
+  @include respond(phone) {
+    padding: 5rem 1rem;
   }
 
-  p {
-    width: 70%;
-    margin: auto;
-    margin-bottom: $med;
+  &__heading {
+    @include Elcenter(column, center, center);
   }
 
-  span {
-    font-weight: bold;
+  &__boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, (minmax(20rem, 1fr)));
+    grid-template-rows: repeat(5, 30rem);
+    justify-items: center;
+    @include respond(tab-land) {
+      grid-template-rows: repeat(6, 30rem);
+      margin-top: 10rem;
+    }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      padding: $small;
+
+      position: relative;
+
+      &__wrapper {
+        height: 100%;
+        @include Elcenter(column, center, center);
+        margin: auto;
+        position: relative;
+        z-index: 2;
+
+        @include respond(phone) {
+          width: 100%;
+          margin: 0;
+        }
+        p {
+          margin: 0;
+          width: 90%;
+          text-align: center;
+        }
+        @include respond(phone) {
+          width: auto;
+        }
+      }
+
+      &--1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+      }
+      &--2 {
+        grid-column: 4 / span 2;
+        grid-row: 2 / span 2;
+        @include respond(tab-land) {
+          grid-column: 2 / span 2;
+          grid-row: 2 / span 3;
+        }
+      }
+      &--3 {
+        grid-row: 4 / span 3;
+        grid-column: 2 / span 2;
+        @include respond(tab-land) {
+          grid-row: 4 / span 2;
+          grid-column: 1 / span 2;
+        }
+      }
+
+      &--icon {
+        padding: $med;
+        @include Elcenter(row, center, center);
+        gap: 2rem;
+        @include respond(tab-land) {
+          grid-column: 1 / span 3;
+          grid-row: 1 / span 2;
+        }
+        @include respond(phone) {
+          flex-direction: column;
+        }
+
+        &-box {
+          gap: 1rem;
+          @include Elcenter(row, center, center);
+        }
+
+        &-name {
+          display: block;
+        }
+
+        img,
+        svg {
+          max-width: 100%;
+          width: auto;
+          height: 4rem;
+        }
+      }
+    }
   }
+
+  &__blob {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      filter: blur(50px);
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .arrow {
+    align-self: center;
+    position: relative;
+    z-index: 100;
+
+    @include respond(tab-land) {
+      grid-area: 2 / 2 / 3 / 4;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+
+    &__2 {
+      grid-row: 2 / 5;
+      grid-column: 3/4;
+      @include respond(tab-land) {
+        grid-row: 3 / 5;
+        grid-column: 1/3;
+      }
+    }
+
+    svg {
+      @include respond(tab-land) {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.letters {
+  background: $main-color;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+
+  @include respond(custom) {
+    display: none;
+  }
+
+  &__img {
+    position: absolute;
+    &__1 {
+      width: 20rem;
+      height: auto;
+      top: 10rem;
+      left: 10rem;
+    }
+
+    &__2 {
+      width: 40rem;
+      height: auto;
+      top: 25rem;
+      left: 35rem;
+    }
+    &__3 {
+      width: 25rem;
+      height: auto;
+      top: 40rem;
+      left: 15rem;
+    }
+  }
+}
+
+.slider {
+  background: linear-gradient(to bottom, $main-color, rgba(#bfbad5, 0.9));
+
+  &__container {
+    display: flex;
+    padding-left: $lg;
+    gap: 10rem;
+    position: relative;
+
+    @include respond(big) {
+      gap: 5rem;
+    }
+    @include respond(tab-land) {
+      padding-left: $med;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+      padding: $small;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    @include Elcenter(column, center, center);
+    gap: 2rem;
+    width: 40%;
+    align-self: center;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 1.4;
+    }
+
+    h2 {
+      width: 100%;
+    }
+
+    h4 {
+      align-self: flex-end;
+      padding-right: $lg;
+      position: relative;
+      @include respond(tab-port) {
+        align-self: center;
+      }
+      @include respond(phone) {
+        align-self: flex-end;
+      }
+      &::after {
+        @extend %line::after;
+      }
+      &::before {
+        @extend %line::before;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: -16rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    svg {
+      width: 90%;
+      height: 170%;
+    }
+
+    svg.slider__bg-svg1 {
+      animation: rotate1 4s ease;
+      -webkit-animation: rotate1 4s ease;
+      transition: animation 0.5s;
+      -webkit-transition: animation 0.5s;
+      -moz-transition: animation 0.5s;
+      -ms-transition: animation 0.5s;
+      -o-transition: animation 0.5s;
+    }
+    svg.slider__bg-svg2 {
+      animation: rotate2 4s ease;
+      -webkit-animation: rotate2 4s ease;
+      transition: animation 0.5s;
+      -webkit-transition: animation 0.5s;
+      -moz-transition: animation 0.5s;
+      -ms-transition: animation 0.5s;
+      -o-transition: animation 0.5s;
+    }
+  }
+
+  &__content {
+    display: flex;
+    width: 60%;
+    gap: 5rem;
+
+    position: relative;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    @include respond(phone) {
+      gap: 0;
+    }
+
+    &__slide {
+      display: flex;
+      overflow: hidden;
+      transition: transform 0.5s ease-in-out;
+      -webkit-transition: transform 0.5s ease-in-out;
+      -moz-transition: transform 0.5s ease-in-out;
+      -ms-transition: transform 0.5s ease-in-out;
+      -o-transition: transform 0.5s ease-in-out;
+
+      @include respond(phone) {
+        justify-content: center;
+      }
+      &__card {
+        transition: transform 0.2s;
+        -webkit-transition: transform 0.2s;
+        -moz-transition: transform 0.2s;
+        -ms-transition: transform 0.2s;
+        -o-transition: transform 0.2s;
+        z-index: 1;
+        color: #fff;
+        width: 59rem;
+        height: 63rem;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateX(1rem);
+          -webkit-transform: translateX(1rem);
+          -moz-transform: translateX(1rem);
+          -ms-transform: translateX(1rem);
+          -o-transform: translateX(1rem);
+        }
+
+        &--zone {
+          width: 100%;
+          height: 62%;
+          position: relative;
+          overflow: hidden;
+        }
+
+        &--img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        &--info {
+          background-color: $text-color;
+          padding: $small $med;
+          display: flex;
+          flex-direction: column;
+          font-size: 0.5rem;
+        }
+
+        h3 {
+          align-self: flex-end;
+          position: relative;
+
+          &::after {
+            @extend %line::after;
+          }
+        }
+
+        &:not(:first-child) {
+          scale: 0.8;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &__navigation {
+      position: absolute;
+      bottom: -4rem;
+      right: 10rem;
+      @include Elcenter(row, center, center);
+      gap: 2rem;
+
+      svg {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      .next {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: $text-color;
+        width: 6rem;
+        height: 6rem;
+      }
+
+      .prev {
+        width: 6rem;
+        height: 6rem;
+        background-color: $text-color;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+
+      .next,
+      .prev {
+        @include Elcenter(row, center, center);
+      }
+    }
+  }
+}
+
+.sheep {
+  position: relative;
+  background-image: ("../img/assets/asset48.svg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -$small;
+  &__box {
+    position: absolute;
+    width: 60%;
+    top: 10rem;
+    right: 0;
+    @include respond(tab-port) {
+      width: 50%;
+      left: 25%;
+      top: 20rem;
+    }
+  }
+
+  &__bg {
+    @include respond(big) {
+      margin: -10rem;
+    }
+    @include respond(tab-port) {
+       width: 150%;
+      margin: 0;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__box-img {
+    position: absolute;
+    animation: swing 1s 0.5s infinite alternate ease-in-out;
+
+    &--1 {
+      width: 30rem;
+      top: -10rem;
+      left: -5%;
+
+      @include respond(tab-port) {
+        width: 30rem;
+        top: -30rem;
+        left: -10rem;
+      }
+      @include respond(custom) {
+        top: -30vw;
+        left: -10rem;
+      }
+      @include respond(phone) {
+        width: 20rem;
+        top: -80vw;
+        left: -40%;
+      }
+    }
+
+    &--2 {
+      width: 45%;
+      top: -5vw;
+      left: 10%;
+      @include respond(tab-port) {
+        width: 30rem;
+        top: -25vw;
+        left: 5%;
+      }
+      @include respond(custom) {
+        top: -20vw;
+      }
+      @include respond(phone) {
+        width: 20rem;
+        top: -75vw;
+        left: 0%;
+      }
+    }
+    &--3 {
+      width: 30%;
+      top: -5vw;
+      right: 10%;
+      @include respond(tab-port) {
+        width: 30rem;
+        top: -30vw;
+        right: -10%;
+      }
+      @include respond(custom) {
+        top: -30vw;
+      }
+
+      @include respond(phone) {
+        width: 20rem;
+        top: -75vw;
+        right: -50%;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &--1,
+    &--2,
+    &--3 {
+      animation: moveY 0.5s 0.1s cubic-bezier(0.19, 1, 0.22, 1),
+        swing 1s 0.3s infinite alternate ease-in-out;
+    }
+  }
+}
+
+.libenar {
+  background-color: $secondary-color;
+  padding: 70rem 0;
+  margin: -70rem auto;
+
+  @include respond(phone) {
+    padding: 20rem 0;
+    margin: -20rem auto;
+  }
+
+  &__box {
+    display: flex;
+    height: 100vh;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    @include respond(big) {
+      gap: 3rem;
+    }
+    @include respond(tab-land) {
+      gap: 3rem;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    @include respond(phone) {
+      height: max-content;
+      margin: $med auto;
+    }
+
+    &:nth-child(3) {
+      flex-direction: row-reverse;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+    }
+
+    &:nth-child(3) .libenar__box__svg {
+      position: absolute;
+      width: 160%;
+      height: 123%;
+      z-index: 2;
+      left: -32%;
+      top: -15%;
+
+      @include respond(big) {
+        width: 120%;
+        height: 100%;
+        top: -20%;
+        left: 0;
+      }
+    }
+    &:nth-child(3) img {
+      @include respond(big) {
+        max-width: 80%;
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+      position: relative;
+      @include respond(big) {
+        width: 40%;
+      }
+      @include respond(custom) {
+        width: 70%;
+      }
+
+      img {
+        position: relative;
+        z-index: 3;
+        max-width: 100%;
+      }
+    }
+
+    &__svg {
+      position: absolute;
+      width: 110%;
+      height: 120%;
+      z-index: 2;
+      left: -5%;
+      top: -25%;
+
+      & > svg {
+        animation: rotate 5s infinite linear;
+        -webkit-animation: rotate 5s infinite linear;
+      }
+
+      @include respond(custom) {
+        display: none;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $med;
+      width: 45%;
+      @include respond(big) {
+        width: 40%;
+        gap: $small;
+      }
+      @include respond(tab-port) {
+        width: 60%;
+      }
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      p {
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__text {
+      &::after,
+      &::before {
+        content: "";
+        display: flex;
+        width: 25rem;
+        height: 0.3rem;
+        background-color: $text-color;
+        margin: $small auto;
+      }
+    }
+
+    h2 {
+      @include respond(phone) {
+        line-height: 1.3;
+        padding: 1rem 0;
+      }
+    }
+    &__icon {
+      display: flex;
+      gap: 5rem;
+      @include respond(phone) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &--box {
+        font-weight: bold;
+        @include Elcenter(column, center, center);
+
+        img {
+          height: 4rem;
+          width: auto;
+        }
+      }
+    }
+    &__link {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
+.image {
+  position: relative;
+  padding-top: 20rem;
+
+  &__shape {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  &__middle {
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__bottom {
+    bottom: -1rem;
+  }
+}
+
+.premia {
+  background-color: $secondary-color;
+  height: max-content;
+  padding: $lg 0;
+  @include Elcenter(row, center, center);
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  @include respond(phone) {
+    padding: $lg 1rem;
+  }
+
+  &__box {
+    @include Elcenter(row, center, center);
+    gap: 5rem;
+    padding: 0 5rem;
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+
+    &__text {
+      width: 40%;
+
+      gap: 2rem;
+      @include Elcenter(column, center, center);
+
+      @include respond(tab-land) {
+        width: 80%;
+      }
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+    &__logos {
+      max-width: 80%;
+      margin-bottom: 2rem;
+
+      @include respond(phone) {
+        max-width: 90%;
+      }
+    }
+
+    &__image {
+      position: relative;
+
+      &--svg {
+        svg {
+          width: 110%;
+          height: 110%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include respond(tab-port) {
+            width: 105%;
+            height: 105%;
+          }
+          @include respond(custom) {
+            display: none;
+          }
+
+          &:first-child {
+            animation: rotate 8s infinite linear;
+            -webkit-animation: rotate 8s infinite linear;
+          }
+
+          &:nth-child(2) {
+            animation: scale 8s infinite linear;
+            -webkit-animation: scale 8s infinite linear;
+          }
+        }
+      }
+
+      &--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        img {
+          max-width: 80%;
+
+          @include respond(tab-land) {
+            max-width: 90%;
+          }
+          @include respond(tab-port) {
+            max-width: 50%;
+          }
+          @include respond(custom) {
+            margin: 5rem 0;
+            max-width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.advice {
+  background-color: $secondary-color;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 20rem;
+
+  @include respond(tab-port) {
+    min-height: auto;
+  }
+
+  &__content {
+    @include Elcenter(column, center, center);
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    gap: 5rem;
+    svg {
+      width: 30rem;
+      height: auto;
+
+      @include respond(tab-port) {
+        width: 20rem;
+      }
+    }
+
+    h2 {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      font-size: 4.2rem;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__devider {
+    display: block;
+    width: 15rem;
+    background: $secondary-color;
+    height: 0.2rem;
+    margin: 1rem auto;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    @include respond(custom) {
+      width: 150%;
+    }
+    @include respond(phone) {
+      width: 300%;
+      bottom: -10%;
+      height: 120%;
+    }
+
+    svg {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: -20%;
+    }
+  }
+
+  &__text {
+    color: $secondary-color;
+  }
+}
+
+.sleep {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  &__img {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(#03061a, 0.5),
+        rgba(#03061a, 1)
+      ),
+      url("../img/assets/asset27.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    animation: sleepy 5s ease 0.1s;
+    -webkit-animation: sleepy 5s ease 0.1s;
+  }
+
+  &__nayzak {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 4rem 0 #edcda3, 0 0 2rem 0 #ffffff,
+      inset 0 0 0.8rem rgba(255, 255, 255, 0.6);
+    top: 0;
+    left: 80%;
+    opacity: 0.3;
+    transform: rotate(-45deg) translate(0, -5rem);
+    -ms-transform: rotate(-45deg) translate(0, -5rem);
+    animation: nayzak 6s infinite;
+    -webkit-animation: nayzak 6s infinite;
+    -webkit-transform: rotate(-45deg) translate(0, -5rem);
+    -moz-transform: rotate(-45deg) translate(0, -5rem);
+    -o-transform: rotate(-45deg) translate(0, -5rem);
+    position: absolute;
+  }
+  &__nayzak::after {
+    content: "";
+    width: 20vw;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2rem rgba(237, 205, 163, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: white;
+      text-align: center;
+    }
+  }
+}
+.gradient {
+  position: absolute;
+  top: -18rem;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(3, 6, 26, 0.8) 0%,
+    #04224d 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(3, 6, 26, 0) 0%,
+    rgba(3, 6, 26, 0.9) 25%,
+    rgba(3, 6, 26, 0.4) 55%,
+    rgba(3, 6, 26, 0) 100%
+  );
 }

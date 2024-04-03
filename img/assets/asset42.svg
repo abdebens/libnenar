@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="866" height="744" viewBox="0 0 866 744">
+                    <defs>
+                      <linearGradient id="path-3-c" x1="83.3%" x2="16.7%" y1="81.9%" y2="23.9%">
+                        <stop offset="0%" stop-color="#E0C8D7"/>
+                        <stop offset="100%" stop-color="#EBBFC8"/>
+                      </linearGradient>
+                      <path class="js-shape" id="path-3-b" d="M118.04967269139735 157.84451574729957 C 187.6377111090443 56.22864170867656 421.99063354347555 -30.878266706136024 540.3745100103732 2.760107517861087 658.758386477271 36.3984817418582 828.0480994777329 247.5409131203038 828.3529314927836 359.6747610912822 828.6577635078343 471.80860906226064 659.7879440987261 633.4330969006787 542.2035021006775 675.5631953437315 424.61906010262885 717.6932937867844 193.53858440603835 698.7417983490044 122.84627950449168 612.4553517495991 52.153974602944984 526.1689051501938 48.46163427375042 259.4603897859226 118.04967269139735 157.84451574729957z" data-params="{ &quot;centerX&quot;: 433, &quot;centerY&quot;: 372, &quot;minRadius&quot;: 300, &quot;maxRadius&quot;: 400 }" data-svg-origin="495.14027404785156 490.6919708251953" transform="matrix(0,0,0,0,495.14027404785156,490.6919708251953)" style="transform-origin: 0px 0px 0px;"/>
+                      <filter id="path-3-a" width="115.4%" height="116.6%" x="-7.7%" y="-7.7%" filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="10" result="shadowSpreadOuter1"/>
+                        <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/>
+                        <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.321568627   0 0 0 0 0.419607843   0 0 0 0 0.690196078  0 0 0 0.18 0"/>
+                      </filter>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <use fill="#000" filter="url(#path-3-a)" xlink:href="#path-3-b"/>
+                      <use fill="url(#path-3-c)" xlink:href="#path-3-b"/>
+                    </g>
+                  </svg>

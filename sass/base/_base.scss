@@ -13,6 +13,39 @@
 
 html {
   font-size: 62.5%; // 16/10 ===> 10px for fontsize
+  @include respond(big-scr) {
+    font-size: 75%;
+  }
+  
+  @include respond(tab-port) {
+    font-size: 58%;
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(phone) {
+    font-size: 50%;
+  }
+}
+
+::-moz-selection {
+  background-color: $text-color;
+  color: #fff;
+}
+
+::selection {
+  background-color: $secondary-color;
+  color: $text-color;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+}
+::-webkit-scrollbar-track {
+  background-color: $text-color;
 }
 
 body {
@@ -21,4 +54,6 @@ body {
   color: $text-color;
   line-height: 1.8;
   font-family: $text-font;
-}
+  overflow-x: hidden;
+  }
+

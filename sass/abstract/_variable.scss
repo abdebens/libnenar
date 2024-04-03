@@ -1,6 +1,7 @@
 $main-color: #f5b8bc;
 $secondary-color: #cbd5ee;
 $text-color: #084d90;
+$text-color-2: #526bb0;
 
 // font
 $heading-font: "heading", cursive;
@@ -9,6 +10,14 @@ $sub-heading-font: "Nunito", sans-serif;
 
 // margin and padding vr
 
-$small:2rem;
-$med:5rem;
-$lg:10rem;
+$small: 2rem;
+$med: 5rem;
+$lg: 10rem;
+
+//break point
+$small-device: 37.5em;
+$custom-device: 50em;
+$medium-device: 68.75em;
+$large-device: 75em;
+$big-device: 100em;
+$largest-device: 112.5em;

@@ -4,3 +4,45 @@
   justify-content: $positionX;
   align-items: $positionY;
 }
+@mixin raduis($r) {
+  border-radius: $r;
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  -ms-border-radius: $r;
+  -o-border-radius: $r;
+}
+
+// mixing for media query
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $small-device) {
+      @content;
+    }
+  }
+  @if $breakpoint == custom {
+    @media only screen and (max-width: $custom-device) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: $medium-device) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: $large-device) {
+      @content;
+    }
+  }
+  @if $breakpoint == big {
+    @media only screen and (max-width: $big-device) {
+      @content;
+    }
+  }
+  @if $breakpoint == bigest-scr {
+    @media only screen and (min-width: $largest-device) {
+      @content;
+    }
+  }
+}

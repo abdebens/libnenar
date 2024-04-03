@@ -1,0 +1,10 @@
+<svg class="js-menu-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.158 82.556" overflow="visible" style="transform-origin: 25% 25% 0px; transform: matrix(1, 0, 0, 1, 0, 0); overflow: visible;">
+                  <defs>
+                    <linearGradient id="gradient-nav" x1=".5" y1="-.303" x2=".5" y2="1.493" gradientUnits="objectBoundingBox">
+                      <stop offset="0" stop-color="#cbd5ee"/>
+                      <stop offset=".5" stop-color="#f5b8bc"/>
+                      <stop offset="1" stop-color="#fcd7a2"/>
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#gradient-nav)" d="M33.979 80.951S92.16 79.382 92.16 40.069 52.847 5.476 49.703 2.331 19.828-5.531 11.966 24.345s-16.3 34-9.434 48.744 31.447 7.862 31.447 7.862z"/>
+                </svg>

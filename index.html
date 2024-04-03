@@ -4,24 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Nunito:wght@800&display=swap"
         rel="stylesheet">
+
+
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- custom css  -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="./css/all.min.css">
     <title>libenar</title>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
 </head>
 
 <body>
+    <div class="preload" data-preload>
+        <div class="circle">
+            <img src="./img/assets/asset30.svg" style="width: 20rem; height:auto;" alt="preload">
 
+        </div>
+    </div>
+
+
+    <!-- navigation for small devices -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__items"><a href="#" class="navigation__link">perché libenar</a></li>
+                <li class="navigation__items">
+                    <a href="#" class="navigation__link">flaconcini monodose <span><i
+                                class="fa-solid fa-caret-down"></i></span>
+                    </a>
+
+                    <ul class="navigation__sublist">
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> LIBENAR
+                                FLACONCINI</a>
+                        </li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> LIBENAR
+                                AEROSOL 3% </a>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li class="navigation__items"><a href="#" class="navigation__link">spray nasale <span><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <ul class="navigation__sublist">
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> ACQUA DI
+                                MARE SPRAY
+                                IGIENE NASALE </a></li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> ACQUA DI
+                                MARE SPRAY
+                                DECONGESTIONANTE </a></li>
+                    </ul>
+                </li>
+                <li class="navigation__items"><a href="#" class="navigation__link">asperator e filtri <span><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <ul class="navigation__sublist">
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> LIBENAR
+                                ASPIRATORE
+                                NASALE SOFT </a></li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> FILTRI
+                                PROTETTIVI
+                                MONOUSO </a></li>
+                    </ul>
+                </li>
+                <li class="navigation__items"><a href="#" class="navigation__link">consigli per mamma e papa <span><i
+                                class="fa-solid fa-caret-down"></i></span></a>
+                    <ul class="navigation__sublist">
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> BENESSERE
+                                DEL NASINO
+                            </a></li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> BENESSERE
+                                DEL NEONATO
+                            </a></li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> BENESSERE
+                                DEL BAMBINO
+                            </a></li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> ESSERE
+                                GENITORI </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__items"><a href="#" class="navigation__link"> community
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <ul class="navigation__sublist">
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> FACEBOOK
+                            </a></li>
+                        <li class="navigation__sublist__items"><a href="#" class="navigation__sublink"> INSTAGRAM
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end navigation for small devices -->
     <!-- header start -->
     <header class="header">
 
+        <!-- nav start -->
 
-            <!-- nav start -->
-        <nav class="navbar">
-            <img src="./img/assets/asset 30.svg" alt="linebar" class="navbar__logo">
+        <nav class="navbar" navbar>
+            <img src="./img/assets/asset30.svg" alt="linebar" class="navbar__logo">
             <ul class="navbar__list">
                 <li class="navbar__items"><a href="#" class="navbar__link">perché libenar</a></li>
                 <li class="navbar__items">
@@ -29,30 +132,40 @@
                     </a>
 
                     <ul class="navbar__sublist">
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> LIBENAR FLACONCINI</a></li>
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> LIBENAR AEROSOL 3% </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> LIBENAR FLACONCINI</a>
+                        </li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> LIBENAR AEROSOL 3% </a>
+                        </li>
                     </ul>
 
 
                 </li>
                 <li class="navbar__items"><a href="#" class="navbar__link">spray nasale</a>
                     <ul class="navbar__sublist">
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> ACQUA DI MARE SPRAY IGIENE NASALE </a></li>
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> ACQUA DI MARE SPRAY DECONGESTIONANTE </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> ACQUA DI MARE SPRAY
+                                IGIENE NASALE </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> ACQUA DI MARE SPRAY
+                                DECONGESTIONANTE </a></li>
                     </ul>
                 </li>
                 <li class="navbar__items"><a href="#" class="navbar__link">asperator e filtri</a>
                     <ul class="navbar__sublist">
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> LIBENAR ASPIRATORE NASALE SOFT </a></li>
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> FILTRI PROTETTIVI MONOUSO </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> LIBENAR ASPIRATORE
+                                NASALE SOFT </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> FILTRI PROTETTIVI
+                                MONOUSO </a></li>
                     </ul>
                 </li>
                 <li class="navbar__items"><a href="#" class="navbar__link">consigli per mamma e papa</a>
                     <ul class="navbar__sublist">
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> BENESSERE DEL NASINO </a></li>
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> BENESSERE DEL NEONATO </a></li>
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> BENESSERE DEL BAMBINO </a></li>
-                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> ESSERE GENITORI </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> BENESSERE DEL NASINO
+                            </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> BENESSERE DEL NEONATO
+                            </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> BENESSERE DEL BAMBINO
+                            </a></li>
+                        <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> ESSERE GENITORI </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="navbar__items"><a href="#" class="navbar__link"> community</a>
@@ -61,7 +174,7 @@
                         <li class="navbar__sublist__items"><a href="#" class="navbar__sublink"> INSTAGRAM </a></li>
                     </ul>
                 </li>
-                
+
                 <button class="btn">
                     <a href="#" class="btn__link">acquista ora</a>
                 </button>
@@ -69,69 +182,1244 @@
         </nav>
         <!-- nav end -->
         <!-- main title -->
-        <h1 class="heading__1">
-            Al fianco dei genitori,
-            <br>
-            
-            sin dal suo primo respiro
-            
-        </h1>
+
+        <div class="hero-heading">
+
+            <h1 class="heading__1">
+                Al fianco dei genitori,
+                <br>
+
+                sin dal suo primo respiro
+
+            </h1>
+        </div>
         <!-- end main title  -->
         <!-- header background-girl -->
-        <div class="header__girl"></div>
+        <div class="header__girl">
+
+        </div>
         <!-- --------------------------- -->
         <!-- bg corner shape -->
         <div class="header__shape">
-        <div class="header__shape--left">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1959.17 1391.59" style="transform: translate(-11%, -20%) matrix(1, 0, 0, 1, 0, 0);">
+            <div class="header__shape--left">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 1959.17 1391.59" style="transform: translate(-11%, -20%) matrix(1, 0, 0, 1, 0, 0);">
                     <linearGradient id="hero-gradient-left" y2="1">
-                      <stop offset="0" stop-color="#dbcbdc"/>
-                      <stop offset="0.4" stop-color="#eac0c9"/>
+                        <stop offset="0" stop-color="#dbcbdc" />
+                        <stop offset="0.4" stop-color="#eac0c9" />
                     </linearGradient>
-                    <path d="M0,1391.59C1.7,1003.8,0,529.6.15,0,.15,0,104,395.7,328.27,520.3s132,232,186,315.09,258.44-140.65,860.68,162.55,584.19,167.12,584.19,167.12v226.53" fill="url(#hero-gradient-left)"/>
-                  </svg>
+                    <path
+                        d="M0,1391.59C1.7,1003.8,0,529.6.15,0,.15,0,104,395.7,328.27,520.3s132,232,186,315.09,258.44-140.65,860.68,162.55,584.19,167.12,584.19,167.12v226.53"
+                        fill="url(#hero-gradient-left)" />
+                </svg>
             </div>
             <div class="header__shape--right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735 2099.5" style="transform: translate(40%, -20%) matrix(1, 0, 0, 1, 0, 0);">
-                    <linearGradient id="hero-right-gradient" gradientUnits="userSpaceOnUse" x1="937.835" y1="-1339.6763" x2="795.1705" y2="-262.4255" gradientTransform="matrix(-0.9848 0.1736 0.1736 0.9848 2524.0889 1191.1726)">
-                      <!--<stop offset="0" stop-color="#CBD5EE"/>-->
-                      <stop offset="0" stop-color="#FCD7A2"/>
-                      <stop offset="0.2" stop-color="#F5B8BC"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735 2099.5"
+                    style="transform: translate(40%, -20%) matrix(1, 0, 0, 1, 0, 0);">
+                    <linearGradient id="hero-right-gradient" gradientUnits="userSpaceOnUse" x1="937.835" y1="-1339.6763"
+                        x2="795.1705" y2="-262.4255"
+                        gradientTransform="matrix(-0.9848 0.1736 0.1736 0.9848 2524.0889 1191.1726)">
+                        <!--<stop offset="0" stop-color="#CBD5EE"/>-->
+                        <stop offset="0" stop-color="#FCD7A2" />
+                        <stop offset="0.2" stop-color="#F5B8BC" />
                     </linearGradient>
-                    <path d="M735,0c0,0-329.8,342.1-321.4,489.8c8.4,147.7-181.5,363-261.1,547.8C73,1222.5,0,1342.5,80.2,1515.5 c80.2,173.1,654.8,584,654.8,584V0z" fill="url(#hero-right-gradient)"/>
+                    <path
+                        d="M735,0c0,0-329.8,342.1-321.4,489.8c8.4,147.7-181.5,363-261.1,547.8C73,1222.5,0,1342.5,80.2,1515.5 c80.2,173.1,654.8,584,654.8,584V0z"
+                        fill="url(#hero-right-gradient)" />
                 </svg>
             </div>
         </div>
-      <div class="down">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.787 99.119">
-            <g data-name="Group 148">
-                <path data-name="Line 1" fill="none" stroke="#526bb0" stroke-linecap="round" stroke-width="2" d="M6.344 1v97"/>
-                <path data-name="Path 131" d="M5.76 98.857l-5.5-5.5a.9.9 0 0 1 1.268-1.266l4.865 4.865 4.866-4.865a.9.9 0 0 1 1.266 1.267l-5.5 5.5a.9.9 0 0 1-1.266 0z" fill="#526bb0"/>
-            </g>
-        </svg>
-      </div>
+        <div class="down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.787 99.119">
+                <g data-name="Group 148">
+                    <path data-name="Line 1" fill="none" stroke="#526bb0" stroke-linecap="round" stroke-width="2"
+                        d="M6.344 1v97" />
+                    <path data-name="Path 131"
+                        d="M5.76 98.857l-5.5-5.5a.9.9 0 0 1 1.268-1.266l4.865 4.865 4.866-4.865a.9.9 0 0 1 1.266 1.267l-5.5 5.5a.9.9 0 0 1-1.266 0z"
+                        fill="#526bb0" />
+                </g>
+            </svg>
+        </div>
     </header>
-        <!-- header end -->
+    <!-- header end -->
 
-        <!-- main start -->
+    <!-- main start -->
 
-        <main>
+    <main>
+        <!-- section one  -->
+        <section class="one">
+            <div class="one__heading">
 
-            <!-- section one  -->
-            <section class="one">
                 <h2 class="heading heading__2">
                     Mantieni il nasino in salute con Libenar
                 </h2>
 
-                <p class="paragraph">
-                    Respirare bene è  <span>uno degli atti </span>più semplici, ma anche <span>più importanti</span> per un bambino
+                <p class="paragraph paragraph__c">
+                    Respirare bene è <span>uno degli atti </span>più semplici, ma anche <span>più importanti</span>
+                    per
+                    un bambino
                 </p>
+            </div>
 
-                <div class="one__boxs"></div>
-                
-            </section>
-            <!-- end section one  -->
-        </main>
+            <div class="one__boxs">
+                <div class="one__boxs__item one__boxs__item--1">
+                    <div class="one__boxs__item__wrapper">
+
+                        <h3 class="heading__3 heading"> respiro libero</h3>
+                        <p class="paragraph">Il benessere nasale <span> influenza le principali attività
+                                del tuo bambino </span> come
+                            mangiare, dormire e...
+                            giocare
+                        </p>
+                    </div>
+                    <div class="one__blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(234, 191, 201);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(224, 198, 212);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d" dur="9000ms" repeatCount="indefinite" values="M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z;
+
+    M463.5,300Q440,350,397.5,375.5Q355,401,315.5,433Q276,465,230.5,443Q185,421,134,409.5Q83,398,50,352.5Q17,307,21,251Q25,195,67,160Q109,125,144.5,95.5Q180,66,226,69.5Q272,73,318.5,78Q365,83,394,121Q423,159,455,204.5Q487,250,463.5,300Z;
+
+    M420.5,293Q413,336,402.5,395.5Q392,455,335.5,473.5Q279,492,227.5,468Q176,444,122.5,427Q69,410,56,355.5Q43,301,38,249Q33,197,56,148Q79,99,128,79Q177,59,228,33Q279,7,318.5,50.5Q358,94,398,123Q438,152,433,201Q428,250,420.5,293Z;
+    
+    M442.5,295Q421,340,395,381.5Q369,423,320.5,426Q272,429,225.5,433Q179,437,144,406Q109,375,82,336.5Q55,298,50,248.5Q45,199,57,144Q69,89,115.5,53Q162,17,220,17.5Q278,18,319.5,53.5Q361,89,402.5,118.5Q444,148,454,199Q464,250,442.5,295Z;
+
+
+M423,291Q406,332,384.5,372.5Q363,413,320,443.5Q277,474,225,463Q173,452,137,417Q101,382,65.5,343Q30,304,45.5,253.5Q61,203,88.5,167.5Q116,132,146.5,95Q177,58,225.5,55Q274,52,315.5,74Q357,96,399,123Q441,150,440.5,200Q440,250,423,291Z;
+
+M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z
+
+
+    ">
+
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="one__blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(234, 191, 201);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(224, 198, 212);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d" dur="9000ms" repeatCount="indefinite" values="M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z;
+
+    M463.5,300Q440,350,397.5,375.5Q355,401,315.5,433Q276,465,230.5,443Q185,421,134,409.5Q83,398,50,352.5Q17,307,21,251Q25,195,67,160Q109,125,144.5,95.5Q180,66,226,69.5Q272,73,318.5,78Q365,83,394,121Q423,159,455,204.5Q487,250,463.5,300Z;
+
+    M420.5,293Q413,336,402.5,395.5Q392,455,335.5,473.5Q279,492,227.5,468Q176,444,122.5,427Q69,410,56,355.5Q43,301,38,249Q33,197,56,148Q79,99,128,79Q177,59,228,33Q279,7,318.5,50.5Q358,94,398,123Q438,152,433,201Q428,250,420.5,293Z;
+    
+    M442.5,295Q421,340,395,381.5Q369,423,320.5,426Q272,429,225.5,433Q179,437,144,406Q109,375,82,336.5Q55,298,50,248.5Q45,199,57,144Q69,89,115.5,53Q162,17,220,17.5Q278,18,319.5,53.5Q361,89,402.5,118.5Q444,148,454,199Q464,250,442.5,295Z;
+
+
+M423,291Q406,332,384.5,372.5Q363,413,320,443.5Q277,474,225,463Q173,452,137,417Q101,382,65.5,343Q30,304,45.5,253.5Q61,203,88.5,167.5Q116,132,146.5,95Q177,58,225.5,55Q274,52,315.5,74Q357,96,399,123Q441,150,440.5,200Q440,250,423,291Z;
+
+M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z
+
+
+    ">
+
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+
+
+                </div>
+                <div class="arrow arrow__1">
+                    <svg class="shape-arrow" xmlns="http://www.w3.org/2000/svg" width="346" height="111"
+                        viewBox="0 0 346 111">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M378.7898,228.5997 L381.4428,225.1847 C382.4888,226.4237 383.6558,227.6827 384.7018,228.9217 L382.0488,232.3367 C381.0028,231.0977 379.8358,229.8387 378.7898,228.5997 Z M59.0823,156.0254 C62.0333,154.6514 64.9833,153.2784 67.7893,152.0354 L68.8463,156.3444 C65.9183,157.5684 62.9923,158.7924 60.1623,160.1844 L59.0823,156.0254 Z M76.8123,148.4014 C79.7153,147.3274 82.7633,146.1224 85.7883,145.0674 L86.5793,149.4884 C83.6993,150.4134 80.6513,151.6174 77.7483,152.6914 L76.8123,148.4014 Z M94.6933,142.1824 C97.6933,141.2774 100.6943,140.3724 103.6713,139.6164 L104.2193,143.9984 C101.3643,144.7734 98.3633,145.6784 95.3623,146.5844 L94.6933,142.1824 Z M112.7473,137.2174 C115.7013,136.6124 118.7993,135.8764 121.7763,135.1204 L122.1793,139.6324 C119.2263,140.2384 116.1513,140.8254 113.1743,141.5814 L112.7473,137.2174 Z M130.9523,133.6584 C134.0263,133.0714 137.0773,132.6334 140.1043,132.3464 L140.2653,136.8214 C137.2143,137.2574 134.1643,137.6954 131.2343,138.1514 L130.9523,133.6584 Z M149.2333,131.1844 C152.2603,130.8964 155.3853,130.7784 158.4363,130.3404 L158.3313,134.9264 C155.3273,135.0644 152.3003,135.3524 149.2733,135.6394 L149.2333,131.1844 Z M167.5433,130.0954 C170.6443,130.1274 173.6483,129.9894 176.6273,130.0014 L176.4013,134.5674 C173.4213,134.5554 170.3203,134.5244 167.3173,134.6624 L167.5433,130.0954 Z M185.9063,130.2434 C188.8623,130.4044 191.9393,130.5854 195.0173,130.7654 L194.5483,135.2944 C191.5923,135.1314 188.5153,134.9514 185.5593,134.7904 L185.9063,130.2434 Z M203.9353,131.7174 C206.9883,132.0474 210.0423,132.3784 212.9513,132.8384 L212.2403,137.3284 C209.3313,136.8684 206.2773,136.5384 203.3453,136.2264 L203.9353,131.7174 Z M221.2073,138.7494 L221.9193,134.2584 C224.9493,134.7394 227.8333,135.3494 230.8393,135.9794 L230.0073,140.4494 C227.1233,139.8384 224.1163,139.2104 221.2073,138.7494 Z M238.8803,142.4684 L239.8343,138.0174 C242.8403,138.6464 245.7993,139.5754 248.6603,140.3364 L247.5853,144.7674 C244.7243,144.0074 241.7423,143.2284 238.8803,142.4684 Z M256.2193,147.5154 L257.5363,143.1224 C260.3743,144.0324 263.3323,144.9614 266.1463,146.0194 L264.8293,150.4134 C261.8943,149.3354 259.0573,148.4254 256.2193,147.5154 Z M273.2703,153.5914 L274.5643,149.3474 C277.4993,150.4254 280.2893,151.6344 283.0793,152.8434 L281.6653,157.0684 C278.8743,155.8594 276.0843,154.6504 273.2703,153.5914 Z M289.8903,160.8264 L291.4253,156.6204 C294.2153,157.8294 296.9583,159.3384 299.7243,160.6964 L298.0683,164.8824 C295.4223,163.5434 292.6563,162.1844 289.8903,160.8264 Z M306.0533,169.3694 L307.6873,165.3324 C310.4293,166.8404 313.1723,168.3484 315.7703,169.9874 L314.0153,174.0044 C311.3943,172.5154 308.6753,170.8584 306.0533,169.3694 Z M321.8093,178.9214 L323.6843,174.9224 C326.2823,176.5614 328.8563,178.3494 331.4303,180.1374 L329.4333,184.1174 C326.9813,182.3484 324.4073,180.5594 321.8093,178.9214 Z M337.1323,189.6314 L339.2493,185.6714 C341.8003,187.6104 344.3273,189.6984 346.7563,191.6164 L344.5403,195.4084 C342.1123,193.4894 339.5613,191.5504 337.1323,189.6314 Z M351.6363,201.5934 L353.8513,197.8024 C356.2333,200.0214 358.7603,202.1084 361.0213,204.3074 L358.7073,207.9294 C356.4233,205.8804 354.0413,203.6634 351.6363,201.5934 Z M365.6113,214.5464 L368.1423,211.1124 C370.4033,213.3104 372.6403,215.6594 374.8763,218.0074 L372.3453,221.4424 C370.1083,219.0934 367.8713,216.7454 365.6113,214.5464 Z M46,162.544635 L47.3228,166.742 C48.7978,166.056 50.1758,165.2 51.6508,164.513 L50.4498,160.334 C48.9748,161.022 47.4988,161.708 45.9998,162.544 L46,160.334 L51.6508,160.334 L51.6508,166.742 L46,166.742 L46,162.544635 Z M376.7087,178.9737 L375.7127,173.6167 L379.3277,172.3427 L380.3247,177.6997 L376.7087,178.9737 Z M378.7273,189.7764 L382.2843,188.4994 L384.2843,199.4004 L380.7273,200.6784 L378.7273,189.7764 Z M382.7283,211.5804 L386.2853,210.3024 L388.2853,221.2054 L384.7283,222.4824 L382.7283,211.5804 Z M385.3054,235.3077 L387.1474,235.4457 L386.7514,233.2357 L390.4294,231.9767 L392.0344,240.6687 L384.7404,239.6667 L385.3054,235.3077 Z M348.8298,230.296 L357.9428,231.586 L357.3528,236.095 L348.2398,234.806 L348.8298,230.296 Z M367.0798,232.727 L376.1928,234.017 L375.6028,238.525 L366.4898,237.235 L367.0798,232.727 Z M334.5417,232.8897 L335.1867,228.3907 L339.8077,229.0167 L339.1627,233.5157 L334.5417,232.8897 Z"
+                            transform="translate(-46 -130)" />
+                    </svg>
+                </div>
+                <div class=" one__boxs__item one__boxs__item--2">
+                    <div class="one__boxs__item__wrapper">
+                        <h3 class="heading__3 heading"> Nasini puliti</h3>
+                        <p class="paragraph"><span> La detersione del nasino evita lo stagnamento del muco </span> che
+                            può causare
+                            proliferazione batterica,
+                            infezioni e naso chiuso.
+                        </p>
+                        <div class="one__boxs__item--icon">
+                            <div class="one__boxs__item--icon-box">
+                                <img src="./img/assets/asset39.svg" alt="detersione">
+                                <span class="one__boxs__item--icon-name">
+                                    detersione
+                                </span>
+                            </div>
+                            <div class="one__boxs__item--icon-box">
+                                <img src="./img/assets/asset40.svg" alt="detersione">
+                                <span class="one__boxs__item--icon-name">
+                                    naso chuiso
+                                </span>
+                            </div>
+                            <div class="one__boxs__item--icon-box">
+                                <img src="./img/assets/asset41.svg" alt="detersione">
+                                <span class="one__boxs__item--icon-name">
+                                    Aerosolterapia
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="one__blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(234, 191, 201);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(224, 198, 212);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d" dur="9000ms" repeatCount="indefinite"
+                                    values="M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z;
+
+    M463.5,300Q440,350,397.5,375.5Q355,401,315.5,433Q276,465,230.5,443Q185,421,134,409.5Q83,398,50,352.5Q17,307,21,251Q25,195,67,160Q109,125,144.5,95.5Q180,66,226,69.5Q272,73,318.5,78Q365,83,394,121Q423,159,455,204.5Q487,250,463.5,300Z;
+
+    M420.5,293Q413,336,402.5,395.5Q392,455,335.5,473.5Q279,492,227.5,468Q176,444,122.5,427Q69,410,56,355.5Q43,301,38,249Q33,197,56,148Q79,99,128,79Q177,59,228,33Q279,7,318.5,50.5Q358,94,398,123Q438,152,433,201Q428,250,420.5,293Z;
+    
+    M442.5,295Q421,340,395,381.5Q369,423,320.5,426Q272,429,225.5,433Q179,437,144,406Q109,375,82,336.5Q55,298,50,248.5Q45,199,57,144Q69,89,115.5,53Q162,17,220,17.5Q278,18,319.5,53.5Q361,89,402.5,118.5Q444,148,454,199Q464,250,442.5,295Z;
+
+
+M423,291Q406,332,384.5,372.5Q363,413,320,443.5Q277,474,225,463Q173,452,137,417Q101,382,65.5,343Q30,304,45.5,253.5Q61,203,88.5,167.5Q116,132,146.5,95Q177,58,225.5,55Q274,52,315.5,74Q357,96,399,123Q441,150,440.5,200Q440,250,423,291Z;
+
+M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z">
+
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="one__blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(234, 191, 201);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(224, 198, 212);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d" dur="9000ms" repeatCount="indefinite" values="M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z;
+
+    M463.5,300Q440,350,397.5,375.5Q355,401,315.5,433Q276,465,230.5,443Q185,421,134,409.5Q83,398,50,352.5Q17,307,21,251Q25,195,67,160Q109,125,144.5,95.5Q180,66,226,69.5Q272,73,318.5,78Q365,83,394,121Q423,159,455,204.5Q487,250,463.5,300Z;
+
+    M420.5,293Q413,336,402.5,395.5Q392,455,335.5,473.5Q279,492,227.5,468Q176,444,122.5,427Q69,410,56,355.5Q43,301,38,249Q33,197,56,148Q79,99,128,79Q177,59,228,33Q279,7,318.5,50.5Q358,94,398,123Q438,152,433,201Q428,250,420.5,293Z;
+    
+    M442.5,295Q421,340,395,381.5Q369,423,320.5,426Q272,429,225.5,433Q179,437,144,406Q109,375,82,336.5Q55,298,50,248.5Q45,199,57,144Q69,89,115.5,53Q162,17,220,17.5Q278,18,319.5,53.5Q361,89,402.5,118.5Q444,148,454,199Q464,250,442.5,295Z;
+
+
+M423,291Q406,332,384.5,372.5Q363,413,320,443.5Q277,474,225,463Q173,452,137,417Q101,382,65.5,343Q30,304,45.5,253.5Q61,203,88.5,167.5Q116,132,146.5,95Q177,58,225.5,55Q274,52,315.5,74Q357,96,399,123Q441,150,440.5,200Q440,250,423,291Z;
+
+M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z
+
+
+    ">
+
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="arrow arrow__2">
+
+                    <svg class="shape-arrow" xmlns="http://www.w3.org/2000/svg" width="230" height="300"
+                        viewBox="0 0 230 300">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M142.1567,317.6814 C142.2557,319.2704 142.2817,320.9574 142.3807,322.5454 L138.2267,322.1064 C138.1277,320.5184 138.1007,318.8294 138.0027,317.2424 L142.1567,317.6814 Z M317.6865,40.8631 L319.7225,44.4661 C316.8015,45.5291 313.9265,46.7771 311.0515,48.0241 L308.8995,44.3381 C311.7025,43.1881 314.6945,42.0261 317.6865,40.8631 Z M300.1295,48.2791 L302.3545,51.8681 C299.5965,53.2001 296.6495,54.5481 294.0085,55.9661 L291.5945,52.3911 C294.4245,50.9601 297.3715,49.6121 300.1295,48.2791 Z M283.4105,56.7591 L285.8965,60.2331 C283.1835,61.7511 280.4705,63.2681 277.9465,64.7711 L275.3885,61.3961 C277.9845,59.7941 280.6975,58.2761 283.4105,56.7591 Z M267.4115,66.2171 L270.0415,69.4931 C267.4465,71.0961 264.8955,72.8831 262.4165,74.5701 L259.6695,71.2091 C262.2655,69.6061 264.9335,67.9051 267.4115,66.2171 Z M252.2505,76.7391 L255.0705,80.0011 C252.7085,81.7741 250.2755,83.6451 247.8415,85.5171 L244.9495,82.3541 C247.2665,80.3981 249.7005,78.5261 252.2505,76.7391 Z M237.7655,88.0551 L240.7295,91.1191 C238.4135,93.0761 236.0965,95.0331 233.8975,97.0751 L230.7445,94.0261 C233.1775,92.1541 235.4495,90.0121 237.7655,88.0551 Z M224.1905,100.3371 L227.4155,103.2861 C225.2165,105.3281 223.0615,107.5541 220.9795,109.6811 L217.7545,106.7311 C219.8365,104.6041 222.0365,102.5621 224.1905,100.3371 Z M211.4085,113.4961 L214.7055,116.3461 C212.7405,118.5591 210.7035,120.8711 208.7375,123.0831 L205.3685,120.3311 C207.4055,118.0201 209.4425,115.7081 211.4085,113.4961 Z M199.7515,127.3231 L203.1935,129.9751 C201.3455,132.2721 199.4255,134.6691 197.6945,137.0511 L194.1805,134.4991 C195.9115,132.1161 197.8325,129.7191 199.7515,127.3231 Z M192.3575,144.3971 C190.6265,146.7801 188.9405,149.3461 187.3265,151.8141 L183.7405,149.3601 C185.4265,146.7941 187.0405,144.3261 188.8435,141.8441 L192.3575,144.3971 Z M182.4575,159.5001 C180.9615,162.0521 179.3925,164.7051 177.8955,167.2581 L174.1655,165.0031 C175.6625,162.4501 177.1145,159.7131 178.7995,157.1451 L182.4575,159.5001 Z M173.6855,175.2701 C172.3055,177.9071 170.9255,180.5461 169.5915,183.3681 L165.7165,181.3111 C166.9795,178.5881 168.4315,175.8501 169.8105,173.2141 L173.6855,175.2701 Z M165.8045,191.5361 C164.5415,194.2591 163.3965,197.0671 162.2505,199.8751 L158.4215,198.0031 C159.5665,195.1941 160.7125,192.3861 162.0465,189.5641 L165.8045,191.5361 Z M159.0045,208.2841 C157.9765,211.1771 156.9485,214.0701 155.9925,216.8641 L152.0185,215.1901 C153.0465,212.2981 153.9575,209.3191 155.1035,206.5111 L159.0045,208.2841 Z M153.4035,225.6001 C152.5645,228.4791 151.7705,231.5421 150.9315,234.4211 L147.0025,232.9311 C147.7245,229.9671 148.6355,226.9891 149.5465,224.0111 L153.4035,225.6001 Z M148.7665,243.3131 C148.0435,246.2761 147.4395,249.3261 146.9075,252.2751 L142.8335,250.9851 C143.4385,247.9351 144.0435,244.8861 144.7655,241.9231 L148.7665,243.3131 Z M145.2095,261.5081 C144.7945,264.5431 144.3075,267.6761 143.8915,270.7121 L139.7915,269.7051 C140.2075,266.6701 140.5775,263.4501 141.0645,260.3161 L145.2095,261.5081 Z M143.0685,279.9721 C142.7705,283.0921 142.5895,286.2981 142.3635,289.3181 L138.3085,288.4951 C138.4175,285.3891 138.7875,282.1711 138.9685,278.9661 L143.0685,279.9721 Z M141.9635,298.7351 C141.8545,301.8411 141.8635,305.0321 141.8715,308.2221 L137.7895,307.6831 C137.7805,304.4931 137.7725,301.3011 137.8815,298.1961 L141.9635,298.7351 Z M331.24145,36 C329.628698,36.4959562 328.132899,37.0768782 326.6361,37.6588 L328.5991,41.3598 C330.096067,40.7788129 331.637031,40.3818177 333.133,39.8008388 L333.133,41.3598 L326.6361,41.3598 L326.6361,36 L331.24145,36 Z M110.29,282.3933 L106.898,284.0963 L104,279.7383 L107.392,278.0353 L110.29,282.3933 Z M116.1293,291.1883 L122.0473,300.0393 L118.6943,301.6983 L112.7763,292.8483 L116.1293,291.1883 Z M127.9653,308.8883 L133.8833,317.7383 L130.5313,319.3973 L124.6133,310.5473 L127.9653,308.8883 Z M142.0908,326.8855 L145.4158,329.4525 L140.9708,335.3235 L136.2598,328.2615 L139.6848,326.5025 L140.8918,328.2895 L142.0908,326.8855 Z M164.3129,297.5301 L167.7549,300.1821 L162.2289,307.5431 L158.7869,304.8901 L164.3129,297.5301 Z M153.1439,312.1651 L156.5849,314.8171 L151.0589,322.1771 L147.6169,319.5251 L153.1439,312.1651 Z M176.0776,289.1355 L173.2566,292.8475 L169.7826,290.2405 L172.6036,286.5285 L176.0776,289.1355 Z"
+                            transform="translate(-104 -36)" />
+                    </svg>
+                </div>
+                <div class="one__boxs__item one__boxs__item--3">
+                    <div class="one__boxs__item__wrapper">
+                        <h3 class="heading__3 heading"> Perché Libenar</h3>
+                        <p class="paragraph">I nostri prodotti nascono dalla <span> lunga esperienza di Libenar</span>
+                            nel trattamento
+                            e nella prevenzione
+                            del naso chiuso di neonati e bambini!
+                        </p>
+                        <div class="one__boxs__item--icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.7 48.7">
+                                <g id="Group_315" transform="translate(-1079.229 -6074.002)">
+                                    <g id="baby-girl" transform="translate(1079.23 6076.942)">
+                                        <g id="Group_305" transform="translate(0 9.593)">
+                                            <g id="Group_304">
+                                                <path id="Path_216" fill="#526bb0"
+                                                    d="M24.9 34.6c-9.3 0-17.4-6.1-19.6-14.6-3 0-5.4-2.5-5.4-5.5s2.5-5.4 5.5-5.4h.5c1.4-3.6 3.9-6.7 7.1-9 .3-.2.8-.2 1.1.2.2.3.2.8-.2 1.1-3.1 2.2-5.5 5.2-6.7 8.8-.1.3-.4.5-.7.5h-1c-2.2 0-3.9 1.7-3.9 3.9s1.7 3.9 3.9 3.9H6c.4 0 .7.2.7.6 1.8 8.1 9.5 14 18.2 14s16.5-5.9 18.2-14c.1-.3.4-.6.7-.6h.5c2.2 0 3.9-1.8 3.9-3.9 0-2.2-1.8-3.9-3.9-3.9h-1c-.3 0-.6-.2-.7-.5-1.2-3.6-3.5-6.6-6.6-8.8-.3-.2-.4-.7-.2-1.1.2-.3.7-.4 1-.2 3.2 2.2 5.7 5.4 7 9h.5c3 0 5.4 2.4 5.5 5.4S47.5 20 44.5 20c-2.2 8.5-10.3 14.6-19.6 14.6z" />
+                                                <g id="Group_302" transform="translate(29.389 15.7)">
+                                                    <ellipse id="Ellipse_35" fill="#526bb0" cx="1.9" cy="1.8" rx="1.8"
+                                                        ry="1.8" />
+                                                </g>
+                                                <g id="Group_303" transform="translate(17.443 15.7)">
+                                                    <ellipse id="Ellipse_36" fill="#526bb0" cx="1.9" cy="1.8" rx="1.8"
+                                                        ry="1.8" />
+                                                </g>
+                                                <path id="Path_217" fill="#526bb0"
+                                                    d="M24.9 27.4c-1.9 0-3.7-.5-5.3-1.5l-.3-.2c-.4-.2-.5-.7-.3-1 .2-.4.7-.5 1-.3l.3.2c2.8 1.7 6.3 1.7 9.1 0l.3-.2c.4-.2.8-.1 1 .2s.1.8-.2 1l-.3.2c-1.5 1.1-3.4 1.6-5.3 1.6z" />
+                                            </g>
+                                        </g>
+                                        <g id="Group_306" transform="translate(12.67)">
+                                            <path id="Path_218" fill="#526bb0"
+                                                d="M12.3 10.4c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6 3.6 1.6 3.6 3.6-1.7 3.6-3.6 3.6zm0-5.7c-1.1 0-2.1.9-2.1 2.1s.9 2.1 2.1 2.1c1.1 0 2.1-.9 2.1-2.1-.1-1.2-1-2.1-2.1-2.1z" />
+                                            <path id="Path_219" fill="#526bb0"
+                                                d="M20.9 13.6c-.5 0-.9-.1-1.3-.2l-7.6-3c-.4-.1-.6-.6-.4-1 .1-.4.6-.6 1-.4l7.6 3c1.1.4 2.3-.1 2.7-1.2.1-.2.1-.5.1-.8V3.6c0-1.1-.9-2.1-2.1-2.1-.3 0-.5 0-.8.1l-7.6 3c-.4.2-.8 0-1-.4-.2-.4 0-.8.4-1l7.6-3c1.8-.7 3.9.2 4.6 2 .2.4.3.9.3 1.3V10c.1 2-1.5 3.6-3.5 3.6z" />
+                                            <path id="Path_220" fill="#526bb0"
+                                                d="M3.6 13.6C1.6 13.6 0 12 0 10V3.6C0 1.6 1.6 0 3.6 0c.5 0 .9.1 1.4.2l7.6 3c.4.2.6.6.4 1-.2.4-.6.6-1 .4l-7.6-3c-1.1-.4-2.3.1-2.7 1.2-.1.3-.1.5-.1.8V10c0 1.1.9 2.1 2.1 2.1.3 0 .5 0 .8-.1l7.6-3c.4-.2.8 0 1 .4.2.4 0 .8-.4 1l-7.6 3c-.6.1-1 .2-1.5.2z" />
+                                        </g>
+                                    </g>
+                                    <g id="baby" transform="translate(1129.115 6074.002)">
+                                        <g id="Group_309" transform="translate(0 10.563)">
+                                            <path id="Path_221" fill="#526bb0"
+                                                d="M24.9 38.2c-9.3 0-17.4-6.1-19.6-14.6-3-.1-5.4-2.5-5.3-5.5.1-2.9 2.5-5.3 5.4-5.3h.5C9 4.9 16.6-.1 24.9 0c8.4-.1 16 4.9 19 12.8h.5c3 0 5.4 2.4 5.4 5.4 0 2.9-2.4 5.4-5.3 5.4-2.2 8.5-10.3 14.6-19.6 14.6zM5.5 14.3c-2.2 0-3.9 1.7-3.9 3.9s1.7 3.9 3.9 3.9H6c.4 0 .7.2.7.6 1.8 8.1 9.5 14 18.2 14s16.5-5.9 18.2-14c.1-.3.4-.6.7-.6h.5c2.2 0 3.9-1.8 3.9-3.9 0-2.2-1.7-3.9-3.9-3.9h-1c-.3 0-.6-.2-.7-.5C40 6.3 32.9 1.4 24.9 1.5 17 1.4 9.9 6.3 7.2 13.8c-.1.3-.4.5-.7.5h-1z" />
+                                            <g id="Group_307" transform="translate(29.387 19.268)">
+                                                <ellipse id="Ellipse_37" fill="#526bb0" cx="1.9" cy="1.8" rx="1.8"
+                                                    ry="1.8" />
+                                            </g>
+                                            <g id="Group_308" transform="translate(17.442 19.268)">
+                                                <ellipse id="Ellipse_38" fill="#526bb0" cx="1.9" cy="1.8" rx="1.8"
+                                                    ry="1.8" />
+                                            </g>
+                                            <path id="Path_222" fill="#526bb0"
+                                                d="M24.9 30.9c-1.9 0-3.7-.5-5.3-1.5l-.3-.2c-.4-.2-.5-.7-.2-1 .2-.4.7-.5 1-.2l.3.2c2.8 1.7 6.3 1.7 9.1 0l.3-.2c.4-.2.8-.1 1 .2s.1.8-.2 1l-.3.2c-1.6 1-3.5 1.5-5.4 1.5z" />
+                                        </g>
+                                        <path id="Path_223" fill="#526bb0"
+                                            d="M26.6 12.2c-3.7 0-6.7-3-6.7-6.7 0-3 2.5-5.5 5.5-5.5C27.9 0 30 2 30 4.5c0 2.1-1.7 3.8-3.8 3.8-1.8 0-3.2-1.4-3.2-3.2 0-.4.3-.8.8-.8.4 0 .8.3.8.8 0 .9.7 1.7 1.7 1.7 1.3 0 2.3-1 2.3-2.3 0-1.7-1.4-3-3-3-2.2 0-4 1.8-4 4 0 2.9 2.3 5.2 5.2 5.2.4 0 .8.3.8.8-.2.3-.6.7-1 .7z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.6 56">
+                                <g id="Group_316" transform="translate(-1419.879 -6065.156)">
+                                    <g id="smiling-girl" transform="translate(1419.879 6065.156)">
+                                        <path id="Path_179" fill="#526bb0"
+                                            d="M27.2 41.1c-2 2-5.2 2-7.1 0-.4-.4-1.1-.4-1.5 0s-.4 1.1 0 1.5c2.8 2.8 7.3 2.8 10.1 0 .4-.4.4-1.1 0-1.5s-1.1-.4-1.5 0z" />
+                                        <path id="Path_180" fill="#526bb0"
+                                            d="M47 51.4c-2.4-2.7-2.5-9.5-2.2-16.6 2.1-2 2.3-5.3.4-7.5.4-7.2.5-12-1.7-16.5C41.8 7.6 39.2 5 36 3.3 31.9 1 27.4-.2 22.8 0c-4.1.2-7.9 2-10.4 5.2-3.4.2-6.4 2-8.1 4.9-.1.2-.3.5-.4.7-2.3 4.5-2.1 9.3-1.7 16.5-1.9 2.2-1.8 5.5.4 7.5.3 7.1.2 13.9-2.2 16.6-.4.4-.4 1.1.1 1.5-.1 0 0 .1.2.1 2.5.9 5.1 1.4 7.7 1.4 2.2 0 4.3-.3 6.4-.9 2-.5 4-1.3 5.8-2.4 2 .3 4 .3 6 0 1.8 1 3.8 1.8 5.8 2.4 2.1.6 4.2.9 6.4.9 2.7 0 5.3-.5 7.8-1.4.5-.2.8-.8.6-1.3 0-.1-.1-.2-.2-.3zM42.1 33v-5.3c1.8.6 2.7 2.5 2.2 4.2-.3 1-1.2 1.8-2.2 2.2V33zM5.7 11.8c.1-.2.2-.4.4-.6 1.4-2.4 4-3.8 6.8-3.8.3 0 .6-.2.8-.4 2.2-2.9 5.5-4.6 9.2-4.8 4.2-.2 8.4.9 12 3 2.8 1.5 5.2 3.9 6.7 6.7 1.8 3.6 1.9 7.4 1.6 14.1-.3-.1-.7-.2-1-.3v-1c0-.6-.5-1-1-1-.6 0-1 .5-1 1V27c-14.2.2-21.9-6.7-24-8.8-.4-.4-1-.4-1.5 0-.1.1-.2.2-.2.4-1.5 3.7-4.1 5.6-8.3 6-.5.1-.9.5-.9 1v.2c-.4.1-.7.2-1 .3-.5-6.9-.4-10.8 1.4-14.3zm-.5 22.3c-1.8-.6-2.8-2.4-2.2-4.2.3-1 1.1-1.9 2.2-2.2v6.4zM2.7 51.5c1.8-3.1 2.2-8.4 1.9-15.5.3.1.6.1.8.2 1.2 6.6 5.8 12 12.1 14.2-4.6 2.1-9.9 2.5-14.8 1.1zm20.9-2.1c-9 0-16.3-7.4-16.4-16.4v-6.7c3.6-.4 6.7-2.6 8.4-5.8 2.2 2 4.6 3.6 7.3 4.9 5.4 2.5 11.2 3.7 17.1 3.6v4c0 9-7.3 16.4-16.4 16.4zm9.5 2.2c-1.2-.3-2.3-.7-3.4-1.2 6.3-2.2 10.9-7.6 12.1-14.2.3 0 .6-.1.8-.2-.2 7.1.1 12.4 1.9 15.5-3.7 1.1-7.6 1.2-11.4.1z" />
+                                        <path id="Path_181" fill="#526bb0"
+                                            d="M11.3 29.9c-.4.4-.4 1.1 0 1.5s1.1.4 1.5 0c.7-.7 1.7-.7 2.4 0 .4.4 1.1.4 1.5 0s.4-1.1 0-1.5c-1.6-1.4-3.9-1.4-5.4 0z" />
+                                        <path id="Path_182" fill="#526bb0"
+                                            d="M36 31.4c.4-.4.4-1.1 0-1.5-1.5-1.5-3.9-1.5-5.3 0-.4.4-.4 1.1 0 1.5s1.1.4 1.5 0c.7-.7 1.7-.7 2.4 0 .3.4 1 .4 1.4 0z" />
+                                    </g>
+                                    <g id="winking-boy" transform="translate(1468.553 6065.156)">
+                                        <path id="Path_183" fill="#526bb0"
+                                            d="M26.4 44.4c-2 .8-4.2-.1-5-2-.2-.5-.8-.8-1.3-.6-.5.2-.8.8-.6 1.3v.1c1.3 3 4.8 4.4 7.8 3.1.5-.2.8-.8.6-1.3-.3-.5-.9-.8-1.5-.6.1 0 0 0 0 0z" />
+                                        <path id="Path_184" fill="#526bb0"
+                                            d="M49 33.1c0-1.4-.5-2.8-1.4-3.8.4-7.7.6-12.9-1.9-17.7-1.8-3.4-4.6-6.2-8-8.1C33.4 1 28.5-.2 23.5 0c-4.4.2-8.4 2.2-11.2 5.6-3.6.2-6.8 2.1-8.6 5.2-.2.3-.3.5-.4.8-2.5 4.8-2.2 10-1.9 17.7-2.1 2.4-1.9 6 .5 8.1.9.8 2.1 1.3 3.3 1.4 1.2 4 4.5 8.4 9.7 13.4 5.3 5 13.6 5 19 0 5.2-4.9 8.5-9.4 9.7-13.4 3.1-.2 5.4-2.7 5.4-5.7zm-25.4-31c4.5-.2 9 .9 13 3.2 3.1 1.7 5.6 4.2 7.2 7.2 2.1 4 2 8.4 1.7 16.2l-2.3.1c-15.5.5-24.1-6.7-26.7-9.3L14 6.9c2.4-2.9 5.9-4.7 9.6-4.8zM5.2 12.5c.1-.2.2-.5.4-.7C6.9 9.5 9.3 8 12 7.7l2.4 12.2c-1.6 3.8-4.5 5.8-8.8 6.2-.5.1-.9.5-.9 1v.3c-.4.1-.9.2-1.3.4-.3-7.2-.2-11.4 1.8-15.3zM2.1 33.1c0-1.6 1.1-3.1 2.7-3.5v5.8c0 .4 0 .8.1 1.3-1.7-.5-2.8-2-2.8-3.6zm30.5 17.6C28 55 21 55 16.4 50.7c-6.3-5.9-9.6-11.2-9.6-15.3v-7.3c3.9-.5 7.3-2.8 9.1-6.3 2.4 2.1 5 3.9 7.9 5.3 5.8 2.7 12.1 4 18.5 3.9v4.5c-.1 4-3.4 9.3-9.7 15.2zm11.6-14.1c.1-.4.1-.8.1-1.3v-4.6l1.8-.1c.6.7.9 1.5.9 2.4-.1 1.7-1.2 3.2-2.8 3.6z" />
+                                        <path id="Path_185" fill="#526bb0"
+                                            d="M11.8 33.3c-.4.4-.4 1.1 0 1.5s1.1.4 1.5 0c.7-.7 1.9-.7 2.7 0 .4.4 1.1.4 1.5 0s.4-1.1 0-1.5c-1.7-1.5-4.2-1.5-5.7 0z" />
+                                        <ellipse id="Ellipse_34" fill="#526bb0" cx="34.5" cy="33.6" rx="1.9" ry="1.9" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <a href="#" class="btn btn__link btn__raduis">scopri perché</a>
+                    </div>
+                    <div class="one__blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(234, 191, 201);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(224, 198, 212);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d" dur="9000ms" repeatCount="indefinite" values="M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z;
+
+    M463.5,300Q440,350,397.5,375.5Q355,401,315.5,433Q276,465,230.5,443Q185,421,134,409.5Q83,398,50,352.5Q17,307,21,251Q25,195,67,160Q109,125,144.5,95.5Q180,66,226,69.5Q272,73,318.5,78Q365,83,394,121Q423,159,455,204.5Q487,250,463.5,300Z;
+
+    M420.5,293Q413,336,402.5,395.5Q392,455,335.5,473.5Q279,492,227.5,468Q176,444,122.5,427Q69,410,56,355.5Q43,301,38,249Q33,197,56,148Q79,99,128,79Q177,59,228,33Q279,7,318.5,50.5Q358,94,398,123Q438,152,433,201Q428,250,420.5,293Z;
+    
+    M442.5,295Q421,340,395,381.5Q369,423,320.5,426Q272,429,225.5,433Q179,437,144,406Q109,375,82,336.5Q55,298,50,248.5Q45,199,57,144Q69,89,115.5,53Q162,17,220,17.5Q278,18,319.5,53.5Q361,89,402.5,118.5Q444,148,454,199Q464,250,442.5,295Z;
+
+
+M423,291Q406,332,384.5,372.5Q363,413,320,443.5Q277,474,225,463Q173,452,137,417Q101,382,65.5,343Q30,304,45.5,253.5Q61,203,88.5,167.5Q116,132,146.5,95Q177,58,225.5,55Q274,52,315.5,74Q357,96,399,123Q441,150,440.5,200Q440,250,423,291Z;
+
+M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z
+
+
+    ">
+
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="one__blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(234, 191, 201);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(224, 198, 212);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d" dur="9000ms" repeatCount="indefinite" values="M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z;
+
+    M463.5,300Q440,350,397.5,375.5Q355,401,315.5,433Q276,465,230.5,443Q185,421,134,409.5Q83,398,50,352.5Q17,307,21,251Q25,195,67,160Q109,125,144.5,95.5Q180,66,226,69.5Q272,73,318.5,78Q365,83,394,121Q423,159,455,204.5Q487,250,463.5,300Z;
+
+    M420.5,293Q413,336,402.5,395.5Q392,455,335.5,473.5Q279,492,227.5,468Q176,444,122.5,427Q69,410,56,355.5Q43,301,38,249Q33,197,56,148Q79,99,128,79Q177,59,228,33Q279,7,318.5,50.5Q358,94,398,123Q438,152,433,201Q428,250,420.5,293Z;
+    
+    M442.5,295Q421,340,395,381.5Q369,423,320.5,426Q272,429,225.5,433Q179,437,144,406Q109,375,82,336.5Q55,298,50,248.5Q45,199,57,144Q69,89,115.5,53Q162,17,220,17.5Q278,18,319.5,53.5Q361,89,402.5,118.5Q444,148,454,199Q464,250,442.5,295Z;
+
+
+M423,291Q406,332,384.5,372.5Q363,413,320,443.5Q277,474,225,463Q173,452,137,417Q101,382,65.5,343Q30,304,45.5,253.5Q61,203,88.5,167.5Q116,132,146.5,95Q177,58,225.5,55Q274,52,315.5,74Q357,96,399,123Q441,150,440.5,200Q440,250,423,291Z;
+
+M480.5,306.5Q466,363,420,396.5Q374,430,327,463Q280,496,226,476.5Q172,457,130,425.5Q88,394,60,349Q32,304,33,250.5Q34,197,66.5,156.5Q99,116,139,90Q179,64,227,55.5Q275,47,317,69.5Q359,92,407,117Q455,142,475,196Q495,250,480.5,306.5Z
+
+
+    ">
+
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end section one  -->
+
+        <!-- start image letters -->
+        <div class="letters">
+            <img src="./img/assets/asset0.png" alt="letter a" class="letters__img letters__img__1">
+            <img src="./img/assets/asset2.png" alt="letter b" class="letters__img letters__img__2">
+            <img src="./img/assets/asset1.png" alt="letter c" class="letters__img letters__img__3">
+        </div>
+
+        <!-- end image letters -->
+        <!-- start slider section -->
+        <section class="slider">
+            <div class="slider__container">
+                <div class="slider__text">
+                    <h2 class="heading heading__2">
+                        Consigli per genitori e bimbi felici
+                    </h2>
+                    <p class="paragraph">
+                        Ehi mamma e papà, <span>abbiamo raccolto per voi consigli</span>, guide e approfondimenti per la
+                        cura del
+                        nasino e il benessere dei più piccoli.<span> Scorri gli articoli </span>e cerca quello più
+                        adatto alle tue
+                        esigenze. Affrontare i<span> piccoli fastidi </span>quotidiani sarà facile con <span>Libenar al
+                            tuo fianco!</span>
+                    </p>
+                    <h4 class="heading heading__3">
+                        Dedicato a te
+                    </h4>
+
+                </div>
+
+
+
+                <div class="slider__content ">
+
+                    <div class="slider__bg">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+
+                                    <stop offset="0" stop-color="#e3e8f6"></stop>
+                                    <stop offset=".5" stop-color="#cbd5ee"></stop>
+                                    <stop offset="1" stop-color="#7c8ebe"></stop>
+                                </linearGradient>
+                                <path id="article-bubble-1"
+                                    d="M338.6 980.3s681.6 202.2 830.6-254.3-230.6-430.9-350-599.2S502-77.7 297.4 239.5-20.7 572.6 3.1 769.8s335.5 210.5 335.5 210.5z"
+                                    fill="url(#aba)"></path>
+                            </g>
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+
+                                    <stop offset="0" stop-color="#e3e8f6"></stop>
+                                    <stop offset=".5" stop-color="#cbd5ee"></stop>
+                                    <stop offset="1" stop-color="#7c8ebe"></stop>
+                                </linearGradient>
+                                <path id="article-bubble-2"
+                                    d="M881.5 182.6S270-82.7 79.8 325.3s165.9 427.1 258 597.2 272 226.2 498.2-45.8 333.8-274 333.8-460.3c.2-186.3-288.3-233.8-288.3-233.8z"
+                                    fill="url(#bab)"></path>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="slider__content__slide  swiper-container">
+
+                        <div class="slider__content__slide__card  swiper-slide">
+                            <div class="slider__content__slide__card--zone">
+                                <div class="slider__content__slide__card--img">
+                                    <img src="./img/assets/asset21.jpeg" alt="slide image">
+                                </div>
+                            </div>
+                            <div class="slider__content__slide__card--info">
+
+                                <h4 class="heading heading__3">benessere del bambino</h4>
+                                <p class="paragraph">Malattie esantematiche nei bambini: come riconoscerle e curarle</p>
+                                <h3 class="heading heading__3 ">leggi tutto</h3>
+                            </div>
+                        </div>
+                        <div class="slider__content__slide__card  swiper-slide">
+                            <div class="slider__content__slide__card--zone">
+                                <div class="slider__content__slide__card--img">
+                                    <img src="./img/assets/asset22.jpeg" alt="slide image">
+                                </div>
+                            </div>
+                            <div class="slider__content__slide__card--info">
+
+                                <h4 class="heading heading__3">benessere del bambino</h4>
+                                <p class="paragraph">Malattie esantematiche nei bambini: come riconoscerle e curarle</p>
+                                <h3 class="heading heading__3 ">leggi tutto</h3>
+                            </div>
+                        </div>
+                        <div class="slider__content__slide__card swiper-slide">
+                            <div class="slider__content__slide__card--zone">
+                                <div class="slider__content__slide__card--img">
+                                    <img src="./img/assets/asset23.jpeg" alt="slide image">
+                                </div>
+                            </div>
+                            <div class="slider__content__slide__card--info">
+
+                                <h4 class="heading heading__3">benessere del bambino</h4>
+                                <p class="paragraph">Malattie esantematiche nei bambini: come riconoscerle e curarle</p>
+                                <h3 class="heading heading__3 ">leggi tutto</h3>
+                            </div>
+                        </div>
+                        <div class="slider__content__slide__card swiper-slide">
+                            <div class="slider__content__slide__card--zone">
+                                <div class="slider__content__slide__card--img">
+                                    <img src="./img/assets/asset24.jpeg" alt="slide image">
+                                </div>
+                            </div>
+                            <div class="slider__content__slide__card--info">
+
+                                <h4 class="heading heading__3">benessere del bambino</h4>
+                                <p class="paragraph">Malattie esantematiche nei bambini: come riconoscerle e curarle</p>
+                                <h3 class="heading heading__3 ">leggi tutto</h3>
+                            </div>
+                        </div>
+                        <div class="slider__content__slide__card swiper-slide">
+                            <div class="slider__content__slide__card--zone">
+                                <div class="slider__content__slide__card--img">
+                                    <img src="./img/assets/asset25.jpeg" alt="slide image">
+                                </div>
+                            </div>
+                            <div class="slider__content__slide__card--info">
+
+                                <h4 class="heading heading__3">benessere del bambino</h4>
+                                <p class="paragraph">Malattie esantematiche nei bambini: come riconoscerle e curarle</p>
+                                <h3 class="heading heading__3 ">leggi tutto</h3>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="slider__content__navigation">
+                        <div class="prev btn ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.663 29.232">
+                                <g id="arrow-point-to-left" transform="translate(113.802 29.232) rotate(180)">
+                                    <path id="Path_131" data-name="Path 131" fill="#fff"
+                                        d="M113.2,16.063l-12.57,12.569a2.047,2.047,0,0,1-2.9-2.895L108.86,14.616,97.738,3.494a2.047,2.047,0,1,1,2.9-2.9L113.2,13.169a2.047,2.047,0,0,1,0,2.894Z"
+                                        transform="translate(0 0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="next btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.663 29.232">
+                                <g id="arrow-point-to-right" transform="translate(-97.139)">
+                                    <path id="Path_131" fill="#fff"
+                                        d="M113.2,16.063l-12.57,12.569a2.047,2.047,0,0,1-2.9-2.895L108.86,14.616,97.738,3.494a2.047,2.047,0,1,1,2.9-2.9L113.2,13.169a2.047,2.047,0,0,1,0,2.894Z"
+                                        transform="translate(0 0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end slider section -->
+
+        <!-- start sheep-svgs -->
+
+        <section class="sheep"">
+            <div class=" sheep__box">
+
+            <div class="sheep__box-img sheep__box-img--1">
+                <img src="./img/assets/asset3.png" alt="sheep_1">
+
+            </div>
+            <div class="sheep__box-img sheep__box-img--2">
+                <img src="./img/assets/asset4.png" alt="sheep_1">
+
+            </div>
+            <div class="sheep__box-img sheep__box-img--3">
+                <img src="./img/assets/asset5.png" alt="sheep_1">
+
+            </div>
+
+            </div>
+            <div class="sheep__bg">
+                <svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2041.93 1004.09">
+                    <linearGradient id="bottom-gradient" x2="0" y2="0.8">
+                        <stop offset="0" stop-color="#c8c0d8" />
+                        <stop offset="1" stop-color="#526bb0" />
+                    </linearGradient>
+                    <path class="js-sheeps-path"
+                        d="M2041.93,0q-7.42,418.56-113.39,576.67c-227.9,340-216,477.64-685.31,411.19S578.7,576.67,292.11,576.67,30.45,531,9.68,447.92Q2,417.17,0,8.89"
+                        fill="url(#bottom-gradient)" />
+                    <path id="sheeps-morph"
+                        d="M2041.93,0c7.41,64.44,51.16,495.09-203.23,731.45C1760.79,803.84,1655,858,1638.53,866.26c-103.5,52.27-244.25,123.35-388.08,98-198.8-35-192.08-216.89-388.09-259.41C699.05,669.47,661.6,788.64,447.72,772.3,296.13,760.72,106.5,680.54,36,529.67,13.19,481,8.79,422.83,0,306.6A1966.67,1966.67,0,0,1,0,8.89"
+                        style="display:none;" />
+                </svg>
+            </div>
+        </section>
+        <!-- end sheep-svgs -->
+
+
+        <!-- start Flaconcini section -->
+        <section class="libenar">
+
+            <div class="Flaconcini libenar__box">
+                <div class="libenar__box__img">
+
+                    <div class="libenar__box__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M343.70761625346023 143.79060565340336 C 425.1736431763861 90.83815346107866 530.1527260939937 34.13555288379861 620.8914064396771 37.98154697049097 711.6300867853605 41.827541057183325 812.5386088211419 106.89721980602721 888.1396983275605 166.8665701735575 963.7407878339791 226.8359205410878 1049.1096368824249 309.92814738044996 1074.4979434781885 397.7976491756727 1099.8862500739522 485.6671509708954 1073.4813617702384 602.6247830354441 1040.469537902142 694.0835809448939 1007.4577140340456 785.5423788543437 953.3684446470523 890.7652567783882 876.4270002696096 946.5504366323712 799.4855558921669 1002.3356164863542 676.6877818947787 1032.9431808303918 578.8208716374859 1028.7946600687915 480.95396138019305 1024.646139307191 365.87463229065474 982.4526797666695 289.22553872585263 921.6593120627688 212.57644516105051 860.8659443588681 145.11469255262838 758.3616291684423 118.9263102486732 664.0344538453874 92.73792794471804 569.7072785223324 94.63169390132376 442.40356815643656 132.0952449021216 355.6962601244392 169.55879590291946 268.9889520924419 262.24158933053434 196.74305784572806 343.70761625346023 143.79060565340336z"
+                                    fill="url(#aba)" />
+                            </g>
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M951.3093696679043 885.0739978633858 C 881.4821799321837 951.5994197151708 768.1143578620184 998.9108862642363 673.3774655589449 1009.8236166229699 578.6405732558713 1020.7363469817035 466.7693775988474 994.4922746230416 382.8880158494628 950.5503800157871 299.0066541000782 906.6084854085327 210.00725315133784 828.7336694106664 170.08929506263718 746.1722489794437 130.17133697393652 663.610828548221 128.0244869963408 548.1098369217781 143.38026731725884 455.18185742845117 158.73604763817687 362.2538779351242 197.95600506758092 253.52716845772665 262.2239769881454 188.60437201948199 326.4919489087099 123.68157558123734 437.47205966781905 76.9677405110292 528.9880988406456 65.64507879898326 620.5041380134722 54.32241708693732 730.5231224873481 77.95200301256764 811.320212025105 120.66840174720635 892.1173015628618 163.38480048184505 966.9339040758259 240.27635724597334 1013.7706360671865 321.9434712068155 1060.607368058547 403.61058516765763 1102.7508150398153 516.8159977361643 1092.3406039732683 610.6710855122593 1081.9303929067214 704.5261732883544 1021.1365594036249 818.5485760116007 951.3093696679043 885.0739978633858z"
+                                    fill="url(#bab)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="./img/assets/asset6.png" alt="libenar__Flaconcini">
+                </div>
+                <div class="libenar__box__info">
+                    <h2 class="heading heading__big">Libenar Flaconcini</h2>
+                    <div class="libenar__box__icon">
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset41.svg" alt="neonati">
+                            <span>neonati</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset39.svg" alt="bambini">
+                            <span>bambini</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset39.svg" alt="detersione">
+                            <span>detersione</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset41.svg" alt="Aerosolterapia">
+                            <span>Aerosolterapia</span>
+                        </div>
+                    </div>
+                    <div class="libenar__box__text">
+
+
+                        <p class="paragraph paragraph__c">
+                            <span> Soluzione isotonica sterile in fiale,</span> senza conservanti, <span> non
+                                iniettabile.</span> In forma di flaconcini monodose, Libenar è <span>igienico e facile
+                                da
+                                usare.</span>
+                        </p>
+                        <p class="paragraph paragraph__sm"> Disponibile in confezioni da 15, 25 o 60 fiale da 5 ml</p>
+                    </div>
+                    <div class="libenar__box__link">
+                        <button>
+                            <a href="#" class="btn btn__link btn__raduis">scopri prodotto</a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" Aerosol libenar__box">
+                <div class="libenar__box__img">
+                    <div class="libenar__box__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M343.70761625346023 143.79060565340336 C 425.1736431763861 90.83815346107866 530.1527260939937 34.13555288379861 620.8914064396771 37.98154697049097 711.6300867853605 41.827541057183325 812.5386088211419 106.89721980602721 888.1396983275605 166.8665701735575 963.7407878339791 226.8359205410878 1049.1096368824249 309.92814738044996 1074.4979434781885 397.7976491756727 1099.8862500739522 485.6671509708954 1073.4813617702384 602.6247830354441 1040.469537902142 694.0835809448939 1007.4577140340456 785.5423788543437 953.3684446470523 890.7652567783882 876.4270002696096 946.5504366323712 799.4855558921669 1002.3356164863542 676.6877818947787 1032.9431808303918 578.8208716374859 1028.7946600687915 480.95396138019305 1024.646139307191 365.87463229065474 982.4526797666695 289.22553872585263 921.6593120627688 212.57644516105051 860.8659443588681 145.11469255262838 758.3616291684423 118.9263102486732 664.0344538453874 92.73792794471804 569.7072785223324 94.63169390132376 442.40356815643656 132.0952449021216 355.6962601244392 169.55879590291946 268.9889520924419 262.24158933053434 196.74305784572806 343.70761625346023 143.79060565340336z"
+                                    fill="url(#aba)" />
+                            </g>
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M951.3093696679043 885.0739978633858 C 881.4821799321837 951.5994197151708 768.1143578620184 998.9108862642363 673.3774655589449 1009.8236166229699 578.6405732558713 1020.7363469817035 466.7693775988474 994.4922746230416 382.8880158494628 950.5503800157871 299.0066541000782 906.6084854085327 210.00725315133784 828.7336694106664 170.08929506263718 746.1722489794437 130.17133697393652 663.610828548221 128.0244869963408 548.1098369217781 143.38026731725884 455.18185742845117 158.73604763817687 362.2538779351242 197.95600506758092 253.52716845772665 262.2239769881454 188.60437201948199 326.4919489087099 123.68157558123734 437.47205966781905 76.9677405110292 528.9880988406456 65.64507879898326 620.5041380134722 54.32241708693732 730.5231224873481 77.95200301256764 811.320212025105 120.66840174720635 892.1173015628618 163.38480048184505 966.9339040758259 240.27635724597334 1013.7706360671865 321.9434712068155 1060.607368058547 403.61058516765763 1102.7508150398153 516.8159977361643 1092.3406039732683 610.6710855122593 1081.9303929067214 704.5261732883544 1021.1365594036249 818.5485760116007 951.3093696679043 885.0739978633858z"
+                                    fill="url(#bab)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="./img/assets/asset7.png" alt="libenar__Flaconcini">
+                </div>
+                <div class="libenar__box__info">
+                    <h2 class="heading heading__big">Libenar Aerosol 3%</h2>
+                    <div class="libenar__box__icon">
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt="neonati">
+                            <span>neonati</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt="bambini">
+                            <span>bambini</span>
+                        </div>
+
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt="Aerosolterapia">
+                            <span>Aerosolterapia</span>
+                        </div>
+                    </div>
+                    <div class="libenar__box__text">
+
+
+                        <p class="paragraph paragraph__c">
+                            <span> Soluzione salina ipertonica sterile al 3%,è indicato per facilitare l’eliminazione di
+                                muco e secrezioni e prevenire la secchezza della mucosa bronchiale.
+                        </p>
+                        <p class="paragraph paragraph__sm">Disponibile in confezioni da 18 flaconcini da 4 ml</p>
+                    </div>
+
+                    <div class="libenar__box__link">
+                        <button>
+                            <a href="#" class="btn btn__link btn__raduis ">scopri prodotto</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="Spray libenar__box">
+                <div class="libenar__box__img">
+
+                    <div class="libenar__box__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M343.70761625346023 143.79060565340336 C 425.1736431763861 90.83815346107866 530.1527260939937 34.13555288379861 620.8914064396771 37.98154697049097 711.6300867853605 41.827541057183325 812.5386088211419 106.89721980602721 888.1396983275605 166.8665701735575 963.7407878339791 226.8359205410878 1049.1096368824249 309.92814738044996 1074.4979434781885 397.7976491756727 1099.8862500739522 485.6671509708954 1073.4813617702384 602.6247830354441 1040.469537902142 694.0835809448939 1007.4577140340456 785.5423788543437 953.3684446470523 890.7652567783882 876.4270002696096 946.5504366323712 799.4855558921669 1002.3356164863542 676.6877818947787 1032.9431808303918 578.8208716374859 1028.7946600687915 480.95396138019305 1024.646139307191 365.87463229065474 982.4526797666695 289.22553872585263 921.6593120627688 212.57644516105051 860.8659443588681 145.11469255262838 758.3616291684423 118.9263102486732 664.0344538453874 92.73792794471804 569.7072785223324 94.63169390132376 442.40356815643656 132.0952449021216 355.6962601244392 169.55879590291946 268.9889520924419 262.24158933053434 196.74305784572806 343.70761625346023 143.79060565340336z"
+                                    fill="url(#aba)" />
+                            </g>
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M951.3093696679043 885.0739978633858 C 881.4821799321837 951.5994197151708 768.1143578620184 998.9108862642363 673.3774655589449 1009.8236166229699 578.6405732558713 1020.7363469817035 466.7693775988474 994.4922746230416 382.8880158494628 950.5503800157871 299.0066541000782 906.6084854085327 210.00725315133784 828.7336694106664 170.08929506263718 746.1722489794437 130.17133697393652 663.610828548221 128.0244869963408 548.1098369217781 143.38026731725884 455.18185742845117 158.73604763817687 362.2538779351242 197.95600506758092 253.52716845772665 262.2239769881454 188.60437201948199 326.4919489087099 123.68157558123734 437.47205966781905 76.9677405110292 528.9880988406456 65.64507879898326 620.5041380134722 54.32241708693732 730.5231224873481 77.95200301256764 811.320212025105 120.66840174720635 892.1173015628618 163.38480048184505 966.9339040758259 240.27635724597334 1013.7706360671865 321.9434712068155 1060.607368058547 403.61058516765763 1102.7508150398153 516.8159977361643 1092.3406039732683 610.6710855122593 1081.9303929067214 704.5261732883544 1021.1365594036249 818.5485760116007 951.3093696679043 885.0739978633858z"
+                                    fill="url(#bab)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="./img/assets/asset8.png" alt="libenar__Flaconcini">
+                </div>
+                <div class="libenar__box__info">
+                    <h2 class="heading heading__big">Libenar Spray Nasale</h2>
+                    <div class="libenar__box__icon">
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt=" bambini">
+                            <span>bambini</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt=" Aerosolterapia">
+                            <span>naso chuiso</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt=" neonati">
+                            <span>neonati</span>
+                        </div>
+                    </div>
+                    <div class="libenar__box__text">
+
+
+                        <p class="paragraph paragraph__c">
+                            Spray nasale con acqua di mare: <span>isotonica</span> per la detersione quotidiana e
+                            <span>ipertonica</span>per alleviare la congestione nasale.
+                        </p>
+                        <p class="paragraph paragraph__sm"> Disponibili in bombole da 100ml</p>
+                    </div>
+                    <div class="libenar__box__link">
+                        <button>
+                            <a href="#" class="btn btn__link btn__raduis ">igiene nasale</a>
+                        </button>
+                        <button>
+                            <a href="#" class="btn btn__link btn__raduis ">DECONGESTIONANTE</a>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Aspiratore libenar__box">
+                <div class="libenar__box__img">
+
+
+
+                    <div class="libenar__box__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M343.70761625346023 143.79060565340336 C 425.1736431763861 90.83815346107866 530.1527260939937 34.13555288379861 620.8914064396771 37.98154697049097 711.6300867853605 41.827541057183325 812.5386088211419 106.89721980602721 888.1396983275605 166.8665701735575 963.7407878339791 226.8359205410878 1049.1096368824249 309.92814738044996 1074.4979434781885 397.7976491756727 1099.8862500739522 485.6671509708954 1073.4813617702384 602.6247830354441 1040.469537902142 694.0835809448939 1007.4577140340456 785.5423788543437 953.3684446470523 890.7652567783882 876.4270002696096 946.5504366323712 799.4855558921669 1002.3356164863542 676.6877818947787 1032.9431808303918 578.8208716374859 1028.7946600687915 480.95396138019305 1024.646139307191 365.87463229065474 982.4526797666695 289.22553872585263 921.6593120627688 212.57644516105051 860.8659443588681 145.11469255262838 758.3616291684423 118.9263102486732 664.0344538453874 92.73792794471804 569.7072785223324 94.63169390132376 442.40356815643656 132.0952449021216 355.6962601244392 169.55879590291946 268.9889520924419 262.24158933053434 196.74305784572806 343.70761625346023 143.79060565340336z"
+                                    fill="url(#aba)" />
+                            </g>
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M951.3093696679043 885.0739978633858 C 881.4821799321837 951.5994197151708 768.1143578620184 998.9108862642363 673.3774655589449 1009.8236166229699 578.6405732558713 1020.7363469817035 466.7693775988474 994.4922746230416 382.8880158494628 950.5503800157871 299.0066541000782 906.6084854085327 210.00725315133784 828.7336694106664 170.08929506263718 746.1722489794437 130.17133697393652 663.610828548221 128.0244869963408 548.1098369217781 143.38026731725884 455.18185742845117 158.73604763817687 362.2538779351242 197.95600506758092 253.52716845772665 262.2239769881454 188.60437201948199 326.4919489087099 123.68157558123734 437.47205966781905 76.9677405110292 528.9880988406456 65.64507879898326 620.5041380134722 54.32241708693732 730.5231224873481 77.95200301256764 811.320212025105 120.66840174720635 892.1173015628618 163.38480048184505 966.9339040758259 240.27635724597334 1013.7706360671865 321.9434712068155 1060.607368058547 403.61058516765763 1102.7508150398153 516.8159977361643 1092.3406039732683 610.6710855122593 1081.9303929067214 704.5261732883544 1021.1365594036249 818.5485760116007 951.3093696679043 885.0739978633858z"
+                                    fill="url(#bab)" />
+                            </g>
+                        </svg>
+                    </div>
+
+
+
+                    <img src="./img/assets/asset9.png" alt="libenar__Flaconcini">
+                </div>
+                <div class="libenar__box__info">
+                    <h2 class="heading heading__big">Libenar Aspiratore Nasale Soft</h2>
+                    <div class="libenar__box__icon">
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt=" neonati">
+                            <span>neonati</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt=" bambini">
+                            <span>bambini</span>
+                        </div>
+                        <div class="libenar__box__icon--box">
+                            <img src="./img/assets/asset40.svg" alt=" bambini">
+                            <span>naso chioso</span>
+                        </div>
+                    </div>
+                    <div class="libenar__box__text">
+
+                        <p class="paragraph paragraph__c">
+                            <span> Soluzione isotonica sterile in fiale,</span> senza conservanti, <span> non
+                                iniettabile.</span> In forma di flaconcini monodose, Libenar è <span>igienico e facile
+                                da
+                                usare.</span>
+                        </p>
+                        <p class="paragraph paragraph__sm"> Disponibile con morbido beccuccio + 5 filtri monouso</p>
+                    </div>
+                    <div class="libenar__box__link">
+                        <button>
+                            <a href="#" class="btn btn__link btn__raduis ">scopri prodotto</a>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end Flaconcini section -->
+
+        <!-- start img section -->
+
+        <section class="image">
+            <div class="image__top image__shape">
+                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200">
+                    <path
+                        d="M0,0H1920V152.47a2388.8,2388.8,0,0,1-492.09,41.13C1059.1,186,898.12,96.1,545.53,91,417.92,89.1,230.23,97.83,0,152.47Z"
+                        fill="#CBD5EE" fill-rule="evenodd"
+                        data-original="M0 0h1920v152.473c-28.803-61.227-187.473-86.852-476.01-76.873C1011.184 90.567 826.23 200 545.703 200 358.685 200 176.784 184.158 0 152.473V0z">
+                    </path>
+                    <path
+                        d="M0,0H1920V152.47a2388.8,2388.8,0,0,1-492.09,41.13C1059.1,186,898.12,96.1,545.53,91,417.92,89.1,230.23,97.83,0,152.47Z"
+                        style="display:none;"></path>
+                </svg>
+
+            </div>
+            <div class="image__middle">
+                <img src="./img/assets/asset10.jpeg" alt="big image">
+            </div>
+            <div class="image__bottom image__shape">
+                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200">
+                    <path
+                        d="M0,200H1920V82.28c-208.21-45.44-371.7-38.81-484.43-23.49-116.76,15.86-140.84,35.84-268.08,45.95-167.39,13.31-300.77-7.36-416.68-26C536.88,44.23,523.86,14.09,400,6.7,242.14-2.71,105.12,36.82,0,82.28Z"
+                        fill="#CBD5EE" fill-rule="evenodd"
+                        data-original="M0 200h1920V82.277c-63.212-61.09-235.83-88.161-517.852-81.213C979.114 11.487 915.81 116.857 516.523 116.857c-172.538 0-344.712-11.527-516.523-34.58V200z">
+                    </path>
+                    <path
+                        d="M0,200H1920V82.28c-208.21-45.44-371.7-38.81-484.43-23.49-116.76,15.86-140.84,35.84-268.08,45.95-167.39,13.31-300.77-7.36-416.68-26C536.88,44.23,523.86,14.09,400,6.7,242.14-2.71,105.12,36.82,0,82.28Z"
+                        style="display:none;"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- end img section -->
+
+        <!-- start premia section  -->
+        <section class="premia">
+            <div class="premia__box">
+                <div class="premia__box__text">
+                    <h2 class="heading heading__big">
+                        Libenar ti premia
+                    </h2>
+                    <p class="paragraph paragraph__c">
+                        Acquista almeno <span>15€ </span> di prodotti, in regalo un <span> buono da 20€ </span>da
+                        spendere online per l'acquisto di tanti articoli delle migliori marche
+                    </p>
+
+                    <img src="./img/assets/asset12.png" alt="premia" class="premia__box__logos">
+
+                    <div class="premia__box__button">
+                        <a href="#" class="btn btn__raduis btn__link"> scopri come parteciapare</a>
+                    </div>
+                </div>
+                <div class="premia__box__image">
+                    <div class="premia__box__image--svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M1039.748327257255 642.3033594282189 C 1015.5127065642001 737.2003515700366 987.3937972763458 855.0569866971335 919.1377605104377 914.7590415488168 850.8817237445296 974.4610964005 724.5759411245342 999.5765442414106 630.212106661806 1000.515688538318 535.8482721990779 1001.4548328352255 429.3172505331629 970.4662224287471 352.9547537340691 920.3939073302613 276.59225693497524 870.3215922317755 211.4884069369373 785.7376656278924 172.03712586724316 700.0817979474033 132.58584479754902 614.4259302669142 97.23101744263148 497.8729995483915 116.24706731590425 406.45870124732653 135.26311718917702 315.0444029462616 210.79852912931642 213.40014250989478 286.13342510687977 151.5960081410136 361.4683210844431 89.79187377213245 471.4076170735046 42.947429782255796 568.2564431812843 35.63389503403958 665.105269289064 28.320360285823366 784.5105415056446 56.090934041071186 867.2263817535583 107.71479965171632 949.9422220014719 159.33866526236145 1035.7978270848168 256.27899540182665 1064.5514846687663 345.3770886979104 1093.3051422527158 434.4751819939941 1063.9839479503096 547.4063672864012 1039.748327257255 642.3033594282189z"
+                                    fill="url(#aba)" />
+                            </g>
+
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1203.3 1065.4">
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="aba" gradientUnits="userSpaceOnUse" x1="310.997" y1="944.252">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M928.4638986022755 906.1960577970982 C 856.8209085353353 970.6654184287356 741.8888144853397 1016.4532499292794 644.4137375082228 1025.2226197795253 546.9386605311058 1033.9919896297713 425.54681554764187 1009.5210000835257 343.61343673957396 958.8122768985737 261.68005793150604 908.1035537136217 186.8562806950852 809.9875587362535 152.81346465981517 720.9702806698137 118.77064862454515 631.953002603374 118.35978208811729 517.850893376353 139.35654052795383 424.70860849993545 160.35329896779038 331.56632362351786 209.3946281845051 226.79550387670474 278.79401529883444 162.11657141130826 348.19340241316377 97.43763894591179 460.61872414445816 44.89772123785946 555.7528632139299 36.63501370755659 650.8870022834017 28.37230617725372 772.6111683264866 60.04101436927286 849.5988497156651 112.54032622949106 926.5865311048436 165.03963808970926 980.2334801833014 263.98652990883085 1017.6789515490012 351.6308848688658 1055.124422914701 439.27523982890074 1089.1408534009852 545.9789271683287 1074.2716779098641 638.4064559897008 1059.402502418743 730.8339848110729 1000.1068886692158 841.7266971654608 928.4638986022755 906.1960577970982z"
+                                    fill="url(#aba)" />
+                            </g>
+                            <g transform="translate(.004 -.002)">
+
+                                <linearGradient id="bab" gradientUnits="userSpaceOnUse" x2="312.06" y2="942.165">
+                                    <stop offset="0" stop-color="#526bb0" />
+                                    <stop offset=".5" stop-color="#cbd5ee" />
+                                    <stop offset="1" stop-color="#fff" />
+                                </linearGradient>
+                                <path class="js-product-preview-bubble"
+                                    d="M1068.0992491953643 363.00400746935685 C 1096.3064893369396 448.2550281789712 1062.7684781239159 567.5243111645044 1032.230484740899 656.9334363431669 1001.6924913578822 746.3425615218295 954.6088277068046 839.9581461879669 884.871288897263 899.4587585413318 815.1337500877213 958.9593708946967 707.671224542743 1007.6800516365955 613.8052518836489 1013.9371104633565 519.9392792245549 1020.1941692901174 400.375852465955 990.4015075640069 321.67545294269894 937.0011115018975 242.97505341944287 883.6007154397881 167.43480567459423 782.5769684377829 141.60285474411242 693.5347340907003 115.77090381363061 604.4924997436178 136.21023478153685 489.5664195283125 166.68374735980805 402.7477054194024 197.15725993807925 315.9289913104923 254.48985232007112 230.82275555665234 324.44393021373963 172.62244943723974 394.39800810740815 114.42214331782714 496.65102910886793 58.07839159488665 586.4082147218191 53.54586870292684 676.1654003347704 49.01334581096703 782.7052048125229 93.85095562440921 862.9870438914471 145.42731208548088 943.2688829703714 197.00366854655255 1039.892009053789 277.7529867597425 1068.0992491953643 363.00400746935685z"
+                                    fill="url(#bab)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="premia__box__image--img">
+                        <img src="./img/assets/asset11.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end premia section -->
+        <!-- start advice section -->
+
+        <section class="advice">
+            <div class="advice__bg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 3291.8 1557.6">
+                    <linearGradient id="pre-gradient" gradientUnits="userSpaceOnUse" x1="937.835" y1="-1339.6763"
+                        x2="795.1705" y2="-262.4255"
+                        gradientTransform="matrix(-0.9848 0.1736 0.1736 0.9848 2524.0889 1191.1726)">
+                        <stop offset="0" stop-color="#CBD5EE" />
+                        <stop offset="0.8639" stop-color="#546DB1" />
+                        <stop offset="1" stop-color="#526BB0" />
+                    </linearGradient>
+                    <path id="pre-shape" fill="url(#pre-gradient)"
+                        d="M2445.2,1464.4c0,0-295.3,94.7-560.2-66.6c-264.9-161.3-241.9,116.5-862.2,66.7 c-620.3-49.8-542.5,56.4-751.1,93.2l-62.2-209.3L0,495.6c0,0,221.9,254.2,334.2,197.3C446.5,636,481.6,330.3,949.8,282.7 C1417.9,235,1510.3,56,1792.5,6.2s484.6,213.5,512.5,252.2c27.9,38.7,986.8,871.3,986.8,871.3L2445.2,1464.4z" />
+                    <path id="pre-shape-morph"
+                        d="M2602.6,1337.3C2336.08,1393.85,2257.39,1500.11,2048,1466c-191.85-31.28-224.79-136.67-462.64-159.32-169.51-16.14-307,22.71-334,30.64-200.91,59-204.91,142-337,156.25-171.56,18.57-230.84-114.24-444.26-165.44-102.89-24.69-257.93-34.33-470.17,49V495.6S221.9,749.8,334.2,692.9,481.6,330.3,949.8,282.7,1510.3,56,1792.5,6.2c178.68-31.53,333.73,95.3,512.5,252.2,230.16,202,587.18,552.3,986.8,1109.54C2987.54,1285.92,2757.6,1304.41,2602.6,1337.3Z"
+                        style="display:none;" />
+                </svg>
+            </div>
+            <div class="advice__content">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="477"
+                    height="477" viewBox="0 0 477 477">
+                    <defs>
+                        <circle id="b" cx="210.5" cy="210.5" r="210.5" />
+                        <filter id="a" width="120.7%" height="120.7%" x="-10.3%" y="-9.6%"
+                            filterUnits="objectBoundingBox">
+                            <feMorphology in="SourceAlpha" operator="dilate" radius="2.5" result="shadowSpreadOuter1" />
+                            <feOffset dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="11.5" />
+                            <feColorMatrix in="shadowBlurOuter1"
+                                values="0 0 0 0 0 0 0 0 0 0.294117647 0 0 0 0 0.57254902 0 0 0 0.19 0" />
+                        </filter>
+                        <linearGradient id="c" x1="28.57%" x2="86.936%" y1="14.831%" y2="90.986%">
+                            <stop offset="0%" stop-color="#CBD5EE" />
+                            <stop offset="47.7%" stop-color="#FCD7A2" />
+                            <stop offset="100%" stop-color="#F5B8BC" />
+                        </linearGradient>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd" transform="translate(28 25)">
+                        <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                        <use fill="#004B92" xlink:href="#b" />
+                        <path fill="url(#c)"
+                            d="M195.4 70.4c-3.3-14.3-18-23.1-32.8-19.6L133 57.6c1.5-6.7 1.5-13.8 0-20.6-5.8-25-30.8-40.7-55.8-34.9-25 5.8-40.7 30.8-34.9 55.8 1.6 6.8 4.7 13.2 9 18.6l-29.6 6.8C6.9 86.7-2.4 101.1.8 115.3c3.3 14.3 18 23.1 32.8 19.6l23-5.3-4.5 84.1c-1.1 15.1 10.2 28.4 25.3 29.5l4.6.3c2.8.2 5.6 0 8.3-.6 11.7-2.7 20.2-12.5 21.2-24.3l6.6-38 22.6 31.3c6.2 10.2 18.1 15.2 29.8 12.6 2.7-.6 5.3-1.7 7.8-3.1l4-2.3c13.1-7.7 17.4-24.6 9.8-37.6l-40.9-73.6 23-5.3c15.2-3.5 24.5-17.9 21.2-32.2z"
+                            transform="translate(112 88)" />
+                    </g>
+                </svg>
+                <div class="advice__text">
+                    <h2 class="heading heading__2">
+                        Hai bisogno di un consiglio?
+                        Cerca tra le nostre risposte!
+                    </h2>
+                    <span class="advice__devider"></span>
+                    <p class="paragraph paragraph__c paragraph__sm">Libenar mette a disposizione un aiuto a tutti i
+                        genitori. Consulta le domande più frequenti e scopri come aiutare il tuo bimbo a respirare
+                        meglio.
+                    </p>
+                </div>
+                <a href="#" class="btn btn__link btn__raduis">SCOPRI DI PIÙ</a>
+            </div>
+        </section>
+
+        <!-- end advice section -->
+        <!-- start sleep section -->
+        <section class="sleep">
+            <div class="sleep__img" id="sleep-nobg">
+                <div class="sleep__text">
+                    <h2 class="sleep__title heading heading__big">sogni Liberi per tutti
+                    </h2>
+                </div>
+                <div class="sleep__nayzak"></div>
+                <div class="night_sky">
+                </div>
+            </div>
+        </section>
+        <!-- end sleep section -->
+
+
+
+
+
+
+
+    </main>
+
+    <!-- start footer -->
+    <footer class="footer">
+
+        <div class="gradient"></div>
+        <div class="footer__logo">
+            <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 183.6 45.4"
+                style="enable-background:new 0 0 183.6 45.4;" xml:space="preserve">
+                <style type="text/css">
+                    .st6 {
+                        fill: #fff;
+                    }
+                </style>
+                <g>
+                    <g>
+                        <path class="st6" d="M59.8,0.6c0.1,0,0.3,0,0.5,0.2c0.1,0.1,0.3,0.3,0.3,0.6l-0.1,0.4L54.9,23c1.3-1.8,2.5-3.2,3.5-4.1
+                         c2.2-2.1,4.6-3.2,6.9-3.2c2.3,0,4.1,0.8,5.5,2.3c1.4,1.5,2.1,3.4,2.1,5.7c0,5.1-2.2,9.9-6.6,14.4c-4.2,4.3-8.7,6.5-13.2,6.5l0,0
+                         c-7.1,0.3-8.6-1.9-8.3-3.6L53.8,7c0.1-0.4,1.6-5.9,1.6-5.9L59.8,0.6z M63.1,19.5c-3,0-5.9,2.8-8.7,8.4c-2.5,4.9-3.7,9-3.7,12.3
+                         c0,0.7,0.2,1.2,0.6,1.6c0.4,0.4,1.1,0.6,2.1,0.6c3.4,0,6.6-2.3,9.5-6.8c2.7-4.1,4.1-7.9,4.1-11.3c0-1.5-0.4-2.7-1.1-3.5
+                         C65.1,19.9,64.2,19.5,63.1,19.5L63.1,19.5z"></path>
+                        <path class="st6" d="M95.8,36.9c-2.1,2.4-3.4,3.7-4.5,4.5c-3.2,2.2-6.4,3.3-9.7,3.3l0,0c-2.3,0-4.4-0.8-6.2-2.4
+                         c-1.8-1.6-2.7-3.9-2.8-6.8c-0.1-4.6,2-9,6.2-13.3c4.2-4.3,8.6-6.4,13.1-6.4c1.7,0,3.1,0.4,4.2,1.2c1.1,0.8,1.6,2,1.7,3.5
+                         c0.1,3-1.7,5.6-5.4,7.8c-3.6,2.1-7.4,3.4-11.3,3.9l-1.6,0.2c-0.2,0.7-0.4,1.3-0.5,1.7c-0.1,0.5-0.1,1.1-0.1,1.8
+                         c0,1.7,0.6,3,1.8,3.9c1.2,1,2.5,1.4,4.1,1.4c1.5,0,3.1-0.5,4.8-1.5c1.3-0.7,4.2-3.2,7.4-6.5L95.8,36.9z M90.8,18
+                         c-1.3,0-2.6,0.5-3.8,1.6c-1.3,1.1-2.4,2.4-3.4,3.7c-1.1,1.6-1.9,3.2-2.5,4.7c-0.3,0.7-0.6,1.4-0.9,2.2c3.7-0.6,6.7-1.9,9-3.9
+                         c2.4-2.1,3.6-4.1,3.6-6.2c0-0.7-0.2-1.2-0.5-1.6C91.9,18.2,91.4,18,90.8,18L90.8,18z"></path>
+                        <g>
+                            <path class="st6"
+                                d="M38.9,14.5c1,0,1.9-0.3,2.6-1c0.7-0.7,1.1-1.5,1.1-2.5c0-1-0.3-1.8-1-2.5c-0.7-0.7-1.6-1-2.6-1
+                             c-1,0-1.9,0.3-2.6,1c-0.7,0.7-1.1,1.5-1.1,2.5c0,1,0.3,1.8,1,2.5C37,14.1,37.9,14.5,38.9,14.5z"></path>
+                            <path class="st6" d="M45.3,34.4c-2.2,2.4-4,4.1-5.5,4.9c-1.7,0.9-3.3,1.3-4.6,1.3c-0.6,0-1.1-0.1-1.4-0.3
+                             c-0.4-0.4-0.4-0.9-0.4-1.3c0.1-0.6,0.1-0.5,0.5-1.8l7-20.3c0.1-0.2,0-0.5-0.3-0.6l-0.2-0.1h-0.1l-5.5,0.6c0,0-1.7,4.8-1.8,4.9
+                             l-5.1,15c-0.3,0.8-0.4,1.5-0.6,1.9c-0.1,0.4-0.2,1-0.2,1.5c0,1,0.3,1.9,1,2.7c0.5,0.6,1.6,1.2,2.6,1.5l0,0c0.1,0,0.9,0.1,0.9,0.1
+                             c0.2,0,0.5,0,0.7,0c2.9,0,5.8-1.1,8.7-3.4c0.8-0.6,1.5-1.4,3-3L45.3,34.4z"></path>
+                        </g>
+                        <path class="st6" d="M108.5,15.7c0.1,0,0.3,0,0.4,0c0.2,0,0.5,0.1,0.6,0.5l0,0.1l0,0.1l-3.4,10.8c2-2.8,3.7-5,5.1-6.5
+                         c3.1-3.3,5.9-5,8.4-5c1,0,1.8,0.2,2.6,0.6c1.4,0.7,2.1,2,2.1,3.9c0,0.5-0.1,1-0.2,1.6c-0.1,0.5-0.2,1.1-0.4,1.7L119.5,38
+                         c-0.1,0.3-0.2,0.7-0.3,1.1c-0.1,0.4-0.1,0.7-0.1,0.9c0,0.2,0.1,0.5,0.2,0.6c0.1,0.1,0.1,0.2,0.4,0.2c0.4,0,0.9-0.3,1.6-0.8
+                         c0.6-0.6,2.8-3.2,4.4-5.2l0.5-0.6l-0.1,1.3l0,1.6l0,0.1l-0.3,0.5c-1.7,2.3-2.8,3.4-3.8,4.3c-1.7,1.7-3.4,2.5-5.1,2.5l0,0
+                         c-0.8,0-1.5-0.3-2.2-0.7c-0.7-0.5-1.1-1.4-1.1-2.8c0-0.4,0-0.7,0.1-1.1c0.1-0.4,0.1-0.8,0.2-1.1l4-14.7c0.2-0.8,0.3-1.4,0.4-1.9
+                         c0.1-0.5,0.1-0.8,0.1-1.1c0-0.4-0.1-0.8-0.3-1.1c-0.2-0.2-0.5-0.4-1-0.4c-1.5,0-3.4,1.3-5.7,4c-1.4,1.6-2.8,3.6-4.3,5.8
+                         c-1.1,1.7-1.9,3.4-2.5,5.1c-0.6,1.7-1.6,4.7-3,9.1l-0.1,0.2h-0.3h-4.8H96l0.1-0.4l5.3-18.7c0.5-1.6,0.7-2.5,0.8-2.9
+                         c0-0.1,0.2-0.7,0.3-1.3c0.2-0.8,0.5-2,0.5-2.2l0.5-2.2L108.5,15.7z"></path>
+                        <path class="st6" d="M155.6,38.9c-1.3,1.5-2.8,3.1-4.2,4.1c-1.3,1-2.7,1.5-4,1.5c-0.9,0-1.6-0.3-2.1-0.9c-0.5-0.6-0.7-1.3-0.7-2.2
+                         c0-0.8,0.1-1.8,0.4-3.2c0.1-0.5,0.2-1,0.3-1.5c-0.2,0.3-0.5,0.6-0.8,1c-0.9,1.2-2,2.3-3.3,3.4c-1.5,1.3-3,2.3-4.4,2.9
+                         c-1.1,0.4-2.2,0.6-3.2,0.6l0,0c-1.8,0-3.4-0.7-4.8-2.1c-1.4-1.4-2.1-3.4-2.1-6c0-4.3,2-8.9,6-13.5c4.1-4.9,8.4-7.3,12.9-7.3
+                         c1.7,0,3.1,0.4,4.1,1.3c0.4,0.4,0.7,0.8,1,1.4L151,17c0.1-0.3,0.2-0.5,0.3-0.6c0.2-0.2,0.5-0.3,0.7-0.3l3.6-0.4c0,0,0,0,0,0
+                         c0.4,0,0.6,0.1,0.7,0.3c0.1,0.2,0.1,0.3,0,0.6c-0.1,0.3-0.2,0.5-0.2,0.6l-0.2,0.7l-3.1,10.8c-0.7,2.4-1.2,4.4-1.7,6.1
+                         c-0.9,3.8-1.1,4.9-1.1,5.2c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.5-0.1c0.2-0.1,0.5-0.3,0.8-0.5l0.5-0.4
+                         c0.6-0.5,3.3-3,4.8-4.6L155.6,38.9z M145.8,17.7c-3.3,0-6.3,2.5-9.2,7.4c-2.5,4.4-3.8,8.2-3.8,11.3c0,1.5,0.3,2.6,1,3.3
+                         c0.6,0.7,1.4,1,2.4,1c3,0,5.9-2.4,8.7-7.2c2.7-4.4,4.1-8.4,4.1-11.9c0-1.4-0.3-2.4-0.9-3C147.4,18,146.7,17.7,145.8,17.7
+                         L145.8,17.7z"></path>
+                        <path class="st6" d="M180.9,16.7L180.9,16.7C180.9,16.7,180.9,16.7,180.9,16.7c-0.1-0.1-0.1-0.1-0.1-0.1l0,0
+                         c-0.6-0.6-1.5-0.9-2.6-0.9c-2.1,0-4.3,1.2-6.5,3.7c-1.8,2-3.5,4.2-5,6.5l2.6-8.8c0-0.1,0-0.3,0.1-0.5c0-0.2-0.1-0.4-0.2-0.6
+                         c-0.1-0.1-0.3-0.3-0.8-0.3l-4.7,0.7c-0.1,0-0.2,0-0.3,0c0,0-0.9,4-1.2,5.1c-0.1,0.4-0.2,0.8-0.3,1c-0.2,0.8-0.5,1.8-0.8,2.8
+                         l-5.7,18.2l-0.1,0.4h6l0.1-0.2c1-2.9,1.8-5.2,2.5-6.9c1-2.5,1.9-4.6,2.6-6.2c1.3-2.5,2.8-4.9,4.4-7.1c2.1-2.7,3.1-3.2,3.5-3.2
+                         l0.1-0.1c0.1,0,0.1,0.1,0.2,0.2l0.4,0.7c0.2,0.4,0.6,0.7,1,1c0.4,0.3,1,0.4,1.8,0.4c1.1,0,2-0.3,2.7-1c0.6-0.7,1-1.5,1-2.5
+                         C181.8,18.1,181.5,17.4,180.9,16.7z"></path>
+                        <path class="st6"
+                            d="M27.3,35.3c-1,1.2-2.2,1.9-2.9,2.4c-1.4,0.9-3.4,1.4-6.2,1.4c-0.3,0-0.6,0-0.9,0l-0.6,0
+                         c-1.4,0-3.5-0.1-5.2-0.1c-1,0-1.7,0-2.2,0.1C10,36.9,20.9,3,21.3,1.8c0.3-0.8-0.4-1-0.6-1l-5,0.5c0,0-1.1,0-1.4,1
+                         c-1.8,6.1-12.8,40.3-12.4,41C2.1,43.9,2.3,44,3.1,44c0.3,0,0.6,0,0.8,0l14.9,0c3-0.1,4.6-1.3,7.1-4.7L27.3,35.3z">
+                        </path>
+                    </g>
+                    <g>
+                        <path class="st6" d="M170.2,34.8c1.4,0,2.6,1.1,2.6,2.6c0,1.5-1.2,2.7-2.6,2.7c-1.4,0-2.6-1.1-2.6-2.7
+                         C167.6,36,168.8,34.8,170.2,34.8z M170.2,39.8c1.2,0,2.1-1,2.1-2.3c0-1.3-0.9-2.3-2.1-2.3c-1.2,0-2.2,1-2.2,2.3
+                         C168.1,38.8,169,39.8,170.2,39.8z M169.2,35.9h1.2c0.7,0,1.1,0.3,1.1,0.9c0,0.6-0.3,0.8-0.8,0.8l0.9,1.4H171l-0.8-1.3h-0.5V39
+                         h-0.5V35.9z M169.7,37.3h0.5c0.4,0,0.8,0,0.8-0.5c0-0.4-0.3-0.5-0.7-0.5h-0.6V37.3z"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="footer__content">
+            <div class="footer__cat">
+                <img src="./img/assets/asset13.png" alt="perrigo" class="footer__cat--img">
+            </div>
+            <div class="footer__cat">
+                <h3 class="heading paragraph">prodotti</h3>
+                <ul class="footer__cat__list">
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Filtri Protettivi Monouso</a>
+                    </li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Libenar Aspiratore Nasale
+                            Soft</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Libenar Acqua di Mare Spray
+                            Decongestionante</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Libenar Acqua di Mare Spray
+                            Igiene Nasale</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Libenar Aerosol 3%</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Libenar Flaconcini</a></li>
+                </ul>
+                <h3 class="heading paragraph">prodotti</h3>
+                <div class="footer__social">
+                    <span> <a href="#" class="footer__link  "><i
+                                class="fa-brands fa-facebook footer__social__icon"></i></a></span>
+                    <span> <a href="#" class="footer__link  "><i
+                                class="fa-brands fa-instagram footer__social__icon"></i></a></span>
+
+
+                </div>
+            </div>
+            <div class="footer__cat">
+                <h3 class="heading paragraph">CONSIGLI PER MAMMA E PAPÀ
+                </h3>
+                <ul class="footer__cat__list">
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Benessere del Nasino</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Benessere del Neonato</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Benessere del Bambino</a></li>
+                    <li class="footer__cat__item"><a href="#" class="footer__link">Essere genitori</a></li>
+                </ul>
+            </div>
+            <div class="footer__cat">
+                <h3 class="heading">ISCRIVITI ALLA NOSTRA NEWSLETTER
+                </h3>
+                <p class="paragraph paragraph__sm">I campi contrassegnati da asterisco sono obbligatori</p>
+
+                <form action="#" class="form">
+                    <input type="email" class="footer__input" name="email" id="email" placeholder="email" required>
+                    <span class="paragraph__sm">Campo obbligatorio</span>
+                    <input type="text" class="footer__input" name="name" id="name" placeholder="name" required>
+                    <span class="paragraph__sm">Campo obbligatorio</span>
+
+                    <div>
+                        <input type="checkbox" name="check">
+                        <span>Ho preso visione e accetto l'informativa sulla privacy</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="check">
+                        <span>Acconsento al trattamento dei miei dati per ricevere comunicazioni promozionali e
+                            newsletter
+                            tramite email.</span>
+
+                    </div>
+                </form>
+
+                <button type="button" class="form__sub">
+                    <a href="#" class="btn btn__link btn__raduis">ISCRIVITI</a>
+                </button>
+            </div>
+        </div>
+        <div class="footer__detail">
+            <p class="paragraph paragraph__c paragraph__sm">
+                PERRIGO ITALIA S.r.l. - Viale dell’arte 25, 00144 Roma (ITALY)
+                Cod. Fisc e P.IVA: 08923130010 | Capitale Sociale € 6.012.000 i.v. | REA 1080439
+                Copyright © 2017 PERRIGO ITALIA S.r.l.
+            </p>
+            <div class="footer__detail__links">
+
+                <a href="#" class="footer__link">privacy notice</a><a href="#" class="footer__link">cookie
+                    statement</a><a href="#" class="footer__link">cookie list</a>
+            </div>
+            <p class="paragraph paragraph__c paragraph__sm footer__detail__text">
+                Libenar Aspiratore Nasale Soft e i ricambi filtri protettivi sono dispositivi medici CE. Libenar
+                flaconcini, Libenar Spray e Libenar Iper flaconcini sono dispositivi medici CE0344, Libenar Aerosol 3% è
+                un dispositivo medico CE0459. Leggere attentamente le avvertenze o le istruzioni per l’uso.
+                Autorizzazione Min Sal del 23/05/2023.
+            </p>
+            <p class="paragraph paragraph__c paragraph__sm  footer__detail__text">
+                In qualità di Affiliato Amazon io ricevo un guadagno dagli acquisti idonei.</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/app.js" defer></script>
 </body>
+
+
 
 </html>
