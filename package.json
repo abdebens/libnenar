@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "concat:css": "concat -o css/style.concat.css css/normalize.css css/all.min.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all  prefix:css compress:css"
+    "concat:css": "concat -o css/style.concat.css css/normalize.css css/all.min.css css/style.css",
+    "compress:css": "css-minify -f css/style.concat.css",
+    "build:css": "npm-run-all  concat:css  compress:css"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
     "postcss-cli": "^11.0.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.19",
     "concat": "^1.0.3",
     "scrollreveal": "^4.0.9"
   }
