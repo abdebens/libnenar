@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "concat:css": "concat -o css/style.concat.css css/normalize.css css/all.min.css css/style.css",
+    "concat:css": "concat -o css/style.concat.css  css/all.min.css css/style.css",
     "compress:css": "css-minify -f css/style.concat.css",
     "build:css": "npm-run-all  concat:css  compress:css"
   },
